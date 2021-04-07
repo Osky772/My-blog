@@ -6,31 +6,30 @@ const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
   siteMetadata: {
-    siteTitleAlt: `Minimal Blog - Gatsby Theme`,
+    siteTitle: `Oskar Kowalów`,
+    siteTitleAlt: `Oskar Kowalów - blog o programowaniu`,
+    siteLanguage: `pl`,
   },
   plugins: [
     {
       resolve: `@lekoarts/gatsby-theme-minimal-blog`,
       // See the theme's README for all available options
       options: {
+        tagsPath: '/kategorie',
         navigation: [
           {
             title: `Blog`,
             slug: `/blog`,
-          },
-          {
-            title: `About`,
-            slug: `/about`,
-          },
+          }
         ],
         externalLinks: [
           {
-            name: `Twitter`,
-            url: `https://twitter.com/lekoarts_de`,
+            name: `LinkedIn`,
+            url: `https://www.linkedin.com/in/oskar-kowalow/`,
           },
           {
-            name: `Instagram`,
-            url: `https://www.instagram.com/lekoarts.de/`,
+            name: `Github`,
+            url: `https://github.com/Osky772`,
           },
         ],
       },
