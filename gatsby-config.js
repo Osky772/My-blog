@@ -77,5 +77,11 @@ module.exports = {
         openAnalyzer: false,
       },
     },
+    {
+      resolve: `gatsby-plugin-disqus`,
+      options: {
+          shortname: `ok-blog-1`
+      }
+  },
   ].filter(Boolean),
 }
