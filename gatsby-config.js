@@ -5,7 +5,6 @@ require(`dotenv`).config({
 const shouldAnalyseBundle = process.env.ANALYSE_BUNDLE
 
 module.exports = {
-  pathPrefix: "/ok-blog",
   siteMetadata: {
     siteTitle: `Oskar Kowalów`,
     siteTitleAlt: `Oskar Kowalów - blog o programowaniu`,
