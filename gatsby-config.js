@@ -79,7 +79,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-disqus`,
       options: {
-          shortname: `ok-gatsby-blog`
+          shortname: process.env.GATSBY_DISQUS_NAME
       }
   },
   ].filter(Boolean),
