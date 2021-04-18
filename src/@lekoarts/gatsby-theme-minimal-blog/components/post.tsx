@@ -41,7 +41,7 @@ const timeToReadText = (timeToRead) => {
     } else if (timeToRead > 1 && timeToRead < 5) {
         return `${timeToRead} minuty czytania`
     } else {
-        `${timeToRead} minut czytania`
+        return `${timeToRead} minut czytania`
     }
 }
 
