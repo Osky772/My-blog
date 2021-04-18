@@ -1,5 +1,5 @@
 /** @jsx jsx */
-import { jsx } from "theme-ui"
+import { jsx, Link as TLink } from "theme-ui"
 import useSiteMetadata from "@lekoarts/gatsby-theme-minimal-blog/src/hooks/use-site-metadata"
 
 const Footer = () => {
@@ -20,6 +20,7 @@ const Footer = () => {
         variant: `dividers.top`,
       }}
     >
+      <div><TLink href="/polityka-prywatnosci">Polityka prywatności</TLink></div>
       <div>
         &copy; {new Date().getFullYear()} by {siteTitle}.
       </div>
