@@ -17,6 +17,7 @@ module.exports = {
       // See the theme's README for all available options
       options: {
         tagsPath: '/kategorie',
+        postsPrefix: `/blog`,
         navigation: [
           {
             title: `Blog`,
