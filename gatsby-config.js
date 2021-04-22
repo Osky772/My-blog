@@ -8,8 +8,13 @@ module.exports = {
   siteMetadata: {
     siteTitle: `Oskar Kowalów`,
     siteTitleAlt: `Oskar Kowalów - blog o programowaniu`,
+    siteHeadline: `Oskar Kowalów - blog o programowaniu`,
+    siteDescription: `Blog osobity o programowaniu. Tematy związane z front-endem oraz problemami, które rozwiązywałem.`,
     siteLanguage: `pl`,
-    siteImage: ''
+    siteImage: '',
+    author: `Oskar Kowalów`,
+    siteUrl: `https://www.oskarkowalow.pl`,
+    siteImage: `/banner.jpg`
   },
   plugins: [
     {
