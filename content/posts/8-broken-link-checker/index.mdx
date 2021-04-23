@@ -1,0 +1,46 @@
+---
+title: Broken Link Checker - znajdź popsute linki na stronie
+date: 2021-04-22
+tags:
+  - npm
+---
+
+import { jsx, Link as TLink } from "theme-ui"
+import Image from '../../../src/components/Image.tsx';
+import ExternalPostLink from '../../../src/components/ExternalPostLink.tsx';
+
+Z pewnością nie chciałbyś, aby na twojej stronie były jakieś linki które prowadzą do strony, która nieistnieje lub zwyczajnie nie działają z jakiegoś innego powodu (niezależnego od ciebie).
+
+<Image src="./404-error.jpeg"/>
+
+W przypadku małej strony można ręcznie sprawdzić, czy wszystkie linki prowadzą gdzie trzeba, ale na większych stronach to już nie będzie takie szybkie. Poza tym, jako programiści powinniśmy automatyzować powtarzalne czynności 🙂. I właśnie o automatyzacji będzie ten wpis!
+
+Użyjemy bardzo fajnej biblioteki do sprawdzania popsutych linków, a jest to <ExternalPostLink name="broken-link-checker" url="https://github.com/stevenvachon/broken-link-checker"/>.
+
+### Instalacja
+
+> Musimy mieć <ExternalPostLink name="zainstalowany NPM" url="https://www.npmjs.com/get-npm"/> oraz Node w wersji wiekszej lub równej 14.
+
+Instalację możemy przeprowadzić na dwa sposoby:
+1. globalnie - biblioteka dostępna z każdego miejsca i możemy używać w CLI, 
+2. lokalnie - biblioteka dostępna w kodzie.
+
+Zaprezentuję obie opcje.
+
+### Instalacja globalnie
+
+Wystarczy odpalić komendę:
+
+```shell
+npm install broken-link-checker -g
+```
+
+##### Instalacja lokalnie
+
+Wystarczy odpalić komendę:
+
+```shell
+# instalujemy jako devdependencję, gdyż jest potrzebna tylko podczas developmentu
+npm install --save-dev broken-link-checker
+```
+
