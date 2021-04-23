@@ -4,4 +4,5 @@ More info about the Theme and usage in [`@lekoarts/gatsby-theme-minimal-blog`](h
 
 ### Deployment
 
-Deploy site to the Github Pages using `npm run deploy`.
+Site is deployed on Netlify after every push to the `main` branch.
+`.env.example` isn't necessary for now, since the environment ariables are configured on Netlify.

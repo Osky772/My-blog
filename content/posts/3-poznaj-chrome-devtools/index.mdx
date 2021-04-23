@@ -20,7 +20,7 @@ Najważniejsze i najczęściej używane panele to **Elements, Console i Network*
 
 W tym panelu możesz podglądać elementy na stronie. Wystarczy, że klikniesz prawym przyciskiem myszy na wybranym elemencie i z listy wybierzesz "Zbadaj" (ang. "Inspect"). Jeżeli wejdziesz na stronę główną Wikipedii i "zbadasz" logo widoczne w lewym górnym rogu, to w swoich DevToolsach powinieneś zobaczyć coś podobnego:
 
-<Image src="./devtools-panel-elements.webp"/>
+<Image src="./devtools-panel-elements.jpg"/>
 
 A więc w panelu Elements (u mnie DevToolsy są ułożone pionowo, możesz u siebie zmienić układ klikając ikonkę z trzema kropkami, w prawym górnym rogu) widać podświetlony element i w tym przypadku jest to znacznik `<a>`, który ma atrybuty takie jak `title`, `class` i `href` (atrybut `href` to link i tutaj przekierowuje on do strony głównej). 
 
@@ -60,7 +60,7 @@ W panelu Network możesz sprawdzać, czy zasoby są pobierane lub przesyłane, o
 
 Przykładowo, wejdź na Wikipedię i otwórz panel Network (jak wejdziesz w ten panel to przeładuj stronę). Zobaczysz dość długą listę elementów:
 
-<Image src="./devtools-panel-network.webp"/>
+<Image src="./devtools-panel-network.jpg"/>
 
 1. Tutaj możesz symulować prędkość internetu, czyli możesz go zwolnić, aby sprawdzić jak strona będzie się ładowała z ograniczonym dostępem do internetu lub na smartfonach,
 2. Filtruj po zasobach, czyli będzie wyświetlać pliki JS, CSS, itd.,
@@ -71,7 +71,7 @@ Domyślnie na liście zasoby posortowane są chronologicznie. Najnowszy przesył
 
 Będąc dalej na Wikipedii, w panelu Network wybierz, aby filtrował tylko zasoby XHR, a następnie kliknij w pasek wyszukiwania (z napisem "Przeszukaj Wikipedię)  na klawiaturze zacznij wpisywać litery. Zobaczysz jak na liście zaczną pojawiać się nowe zasoby:
 
-<Image src="./devtools-network-headers.webp"/>
+<Image src="./devtools-network-headers.jpg"/>
 
 Jak klikniesz w wybrany zasób, to otworzy się okienko z szczegółami dot. nagłówków HTTP. Tutaj zobaczysz wszystkie nagłówki HTTP, m.in. status zapytania, nazwa metody, itp. W tabie **Preview** zobaczysz podgląd danych danego zasobu, może to być np. JSON lub HTML. W tabie **Response** zobaczysz jakie dane faktycznie są zwracane. Te zakładki są bardzo przydatne, bo pozwalają na sprawdzanie jakie zasoby są wysyłane do serwera i jakie są od niego zwracane. Możesz śledzić komunikację klient-serwer i w razie problemów, wiesz gdzie szukać problemu.
 
