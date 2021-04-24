@@ -15,32 +15,82 @@ Z pewnością nie chciałbyś, aby na twojej stronie były jakieś linki które 
 
 W przypadku małej strony można ręcznie sprawdzić, czy wszystkie linki prowadzą gdzie trzeba, ale na większych stronach to już nie będzie takie szybkie. Poza tym, jako programiści powinniśmy automatyzować powtarzalne czynności 🙂. I właśnie o automatyzacji będzie ten wpis!
 
-Użyjemy bardzo fajnej biblioteki do sprawdzania popsutych linków, a jest to <ExternalPostLink name="broken-link-checker" url="https://github.com/stevenvachon/broken-link-checker"/>.
+Użyjemy bardzo fajnej biblioteki do sprawdzania popsutych linków, a jest to <ExternalPostLink name="broken-link-checker" url="https://github.com/stevenvachon/broken-link-checker"/>. 
 
-### Instalacja
+Bibliotekę możemy używać na dwa sposoby: w wierszu poleceń oraz w kodzie poprzez API. Zaprezentuję obie opcje.
 
-> Musimy mieć <ExternalPostLink name="zainstalowany NPM" url="https://www.npmjs.com/get-npm"/> oraz Node w wersji wiekszej lub równej 14.
+### Spis treści
+- [Użycie w wierszu poleceń](#Użycie-w-wierszu-poleceń)
 
-Instalację możemy przeprowadzić na dwa sposoby:
-1. globalnie - biblioteka dostępna z każdego miejsca i możemy używać w CLI, 
-2. lokalnie - biblioteka dostępna w kodzie.
+> **Instalacja:** Musimy mieć <ExternalPostLink name="zainstalowany NPM" url="https://www.npmjs.com/get-npm"/> oraz Node w wersji wiekszej lub równej 14.
 
-Zaprezentuję obie opcje.
+### Użycie w wierszu poleceń
 
-### Instalacja globalnie
-
-Wystarczy odpalić komendę:
+W celu użycia biblioteki w wierzu poleceń, zainstalujmy ją globalnie:
 
 ```shell
 npm install broken-link-checker -g
 ```
 
-##### Instalacja lokalnie
+Sprawdź dostępne opcje:
+```shell
+blc --help
+```
+
+Typowe użycie w celu przeskanowania całej strony może wyglądać następująco:
+
+```shell
+# -r skanuje rekurencyjnie całą stronę, czyli również wszystkie podstrony
+# -o zachowuje kolejność linków w jakiej pojawiają się na stronie
+blc https://www.oskarkowalow.pl -ro
+```
+
+Powyższy skrypt uruchomi skanowanie wybranej strony. Tak wygląda kawałek skanowania mojej strony:
+
+<Image src="./blc-scanning.png"/>
+
+Wynik skanowania jest bardzo czytelny i wiadomo, które linki działają a które nie. U mnie tak wygląda wynik zakończenia skanowania:
+
+```
+Finished! 682 links found. 578 excluded. 18 broken.
+Elapsed time: 49 seconds
+```
+
+Moja strona jest jeszcze dość mała i skanowanie wszystkich podstron nie było zbyt czasochłonne.
+
+Widać jednak, że linki prowadzące do Linkedin wyrzucają błąd. To zachowanie jest nie do ominięcia i linki prowadzące do Linkedin zawsze będą zwracać ten błąd.
+
+#### Pomijanie linków
+
+Możemy pomijać skanowanie wybranych linków, aby przyspieszyć skanowanie lub pozbyć się linków, które zawsze zwracają błąd
+
+- `--exclude-external` lub `-e` spowoduje pominięcie wszystkich linków do zewnętrznych serwisów,
+- `--exclude-internal` lub `-i` spowoduje pominięcie wszystkich wewnętrznych linków, a więc będzie sprawdzać tylko zewnętrzne linki,
+- `--exclude` pozwala na powinjanie różnych ścieżek i wybranych linków.
+
+Tak może wyglądać pominięcie linków do Linkedin oraz podstorny "blog/kategorie":
+```shell
+blc https://www.oskarkowalow.pl -ro \
+--exclude linkedin \
+--exclude /blog/kategorie
+```
+
+#### Skanowanie tylko jednej strony
+
+Czasem skanowanie wszystkich podstron może być bardzo czaschłonne, szczególnie jeżeli mamy bardzo duży serwis do sprawdzenia. W takim wypadku wystarczy odjąc flagę `-r`:
+
+```shell
+blc https://www.oskarkowalow.pl -o
+```
+
+### Użycie w kodzie
+
+<!-- ### Instalacja lokalnie
 
 Wystarczy odpalić komendę:
 
 ```shell
 # instalujemy jako devdependencję, gdyż jest potrzebna tylko podczas developmentu
 npm install --save-dev broken-link-checker
-```
+``` -->
 
