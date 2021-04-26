@@ -156,9 +156,9 @@ Event `link` zostanie wyemitowany za każdym razem, gdy link został przeskanowa
     if (result.http.response && ![undefined, 200, 429].includes(result.http.response.statusCode)) {
 
       if (result.internal) {
-        console.error(`broken internal link ${result.http.response.statusCode} => ${result.url.original}`);
+        console.error(`broken internal link ${result.http.response.statusCode} => ${result.url.original} on page ${result.base.resolved}`);
       } else {
-        console.warn(`broken external link ${result.http.response.statusCode} => ${result.url.original}`);
+        console.warn(`broken external link ${result.http.response.statusCode} => ${result.url.original} on page ${result.base.resolved}`);
       }
 
     }
@@ -166,9 +166,9 @@ Event `link` zostanie wyemitowany za każdym razem, gdy link został przeskanowa
 },
 ```
 
-W zasadzie wystarczająca może być informacja, że link jest zesputy, ale chcemy jeszcze przefiltorować informację sprawdzając `statusCode`. Status `200` nie powinien nigdy się tutaj pojawić, ale `undefined` już może. Dodatkowo wykluczymy sobie status `429` o którym już wspominałem. 
+W zasadzie wystarczająca może być informacja, że link jest zesputy, ale chcemy jeszcze przefiltorować informację sprawdzając `statusCode`. Status `200` nigdy nie powinien się tutaj pojawić, ale `undefined` już może. Dodatkowo wykluczymy sobie status `429` o którym już wspominałem. 
 
-Dodatkowo dla zesputych linków wewnętrzych chcemy użyć `console.error`, a dla zewnętrzych `console.warn`, aby zaznaczyć, że najważniejsze dla nas są działające linki wewnętrzne. 
+Dodatkowo dla zesputych linków wewnętrzych chcemy użyć `console.error`, a dla zewnętrzych `console.warn`, aby zaznaczyć, że najważniejsze dla nas są działające linki wewnętrzne. W logach zawieramy informację o `statusCode`, linku który jest zepsuty `result.url.original` oraz na jakiej stronie znajduje się ten link `result.base.resolved`.
 
 > Nie każdy terminal będzie pokazywał poprawne kolory. `console.error` i `console.warn` mogą mieć biały font, a nie czerwony i żółty, których się spodziewamy. W celu zapewnienia takiego samego zachowania dla wszystkich programów, możemy posłużyć się biblioteką <ExternalPostLink name="chalk" url="https://github.com/chalk/chalk"/>.
 
