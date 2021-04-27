@@ -113,9 +113,9 @@ const siteChecker = new SiteChecker(
         if (result.http.response && ![undefined, 200, 429].includes(result.http.response.statusCode)) {
 
           if (result.internal) {
-            console.error(`broken internal link ${result.http.response.statusCode} => ${result.url.original}`);
+            console.error(`broken internal link ${result.http.response.statusCode} => ${result.url.original} on page ${result.base.resolved}`);
           } else {
-            console.warn(`broken external link ${result.http.response.statusCode} => ${result.url.original}`);
+            console.warn(`broken external link ${result.http.response.statusCode} => ${result.url.original} on page ${result.base.resolved}`);
           }
 
         }
