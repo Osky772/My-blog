@@ -15,7 +15,8 @@ module.exports = {
     author: `Oskar Kowalów`,
     siteUrl: `https://www.oskarkowalow.pl`,
     siteImage: `/banner.jpg`,
-    feedTitle: `Oskar Kowalów - blog o programowaniu`
+    feedTitle: `Oskar Kowalów - blog o programowaniu`,
+    blogPath: `/blog`,
   },
   plugins: [
     {
@@ -88,6 +89,52 @@ module.exports = {
           shortname: process.env.GATSBY_DISQUS_NAME
       }
   },
-  `gatsby-plugin-remove-serviceworker`
+  `gatsby-plugin-remove-serviceworker`,
+  {
+    resolve: `gatsby-plugin-feed`,
+    options: {
+      query: `
+        {
+          site {
+            siteMetadata {
+              title: siteTitle
+              description: siteDescription
+              siteUrl
+              site_url: siteUrl
+            }
+          }
+        }
+      `,
+      feeds: [
+        {
+          serialize: ({ query: { site, allPost } }) => {
+            return allPost.nodes.map(post => {
+              return {
+                title: post.title,
+                date: post.date,
+                description: post.description || post.excerpt,
+                url: site.siteMetadata.siteUrl + '/blog' + post.slug
+              }
+            })
+          },
+          query: `
+          {
+            allPost(sort: { fields: date, order: DESC }) {
+              nodes {
+                title
+                date(formatString: "MMMM D, YYYY")
+                excerpt
+                slug
+              }
+            }
+          }
+          `,
+          output: "/rss.xml",
+          title: "Oskar Kowalów - blog o programowaniu",
+          match: "^/blog/",
+        },
+      ],
+    },
+  },
   ].filter(Boolean),
 }
