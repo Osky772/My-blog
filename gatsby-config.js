@@ -14,7 +14,8 @@ module.exports = {
     siteImage: '',
     author: `Oskar Kowalów`,
     siteUrl: `https://www.oskarkowalow.pl`,
-    siteImage: `/banner.jpg`
+    siteImage: `/banner.jpg`,
+    feedTitle: `Oskar Kowalów - blog o programowaniu`
   },
   plugins: [
     {
