@@ -1,0 +1,44 @@
+---
+title: Łatwa i szybka konfiguracja z Github-em poprzez SSH
+date: 2021-07-27
+tags:
+  - Git
+  - Github
+---
+
+import ExternalPostLink from '../../../src/components/ExternalPostLink.tsx';
+
+W tym wpisie opiszę jak w łatwy sposób połączyć się z Github-em za pomocą SSH.
+Dzięki takiemu połączeniu możemy rozpocząć pracę ze zdalnym repozytorium, czyli zrobić `git clone` poprzez SSH zamiast HTTPS i dalej pracować z repo nie podając loginu i hasła podczas każdego push-a.
+
+### Warunki wstępne
+
+- musisz mieć konto na 
+ <ExternalPostLink name="Github" url="https://github.com" />
+
+### Po co SSH?
+
+Próbując sklonować jakieś repozytorium z Github-a, np. <ExternalPostLink url={"https://github.com/Osky772/www.oskarkowalow.pl"} name={"https://github.com/Osky772/www.oskarkowalow.pl"} /> poprzez SSH dostaniemy podobny error:
+
+```shell
+git clone git@github.com:Osky772/www.oskarkowalow.pl.git
+...
+Initialized empty Git repository in `/Users/username/Documents/www.oskarkowalow.pl/.git/`
+Permission denied (publickey).
+fatal: The remote end hung up unexpectedly
+```
+
+To oznacza, że nie mamy wygenerowanego klucza SSH.
+
+### Konfiguracja
+
+W terminalu musimy uruchomić kilka komend:
+
+1. `cd ~/.ssh && ssh-keygen`,
+2. `ssh-add ~/.ssh/id_rsa`,
+3. teraz kopiujemy klucz do schowka:
+    - na OS X: `cat id_rsa.pub | pbcopy`
+    - na Windows Powershell: `Get-Content id_rsa.pub | Set-Clipboard`
+    - na Windows (via Cygwin/Git Bash): `cat id_rsa.pub | clip`
+    - na Linuxie: `cat id_rsa.pub | xclip`
+
