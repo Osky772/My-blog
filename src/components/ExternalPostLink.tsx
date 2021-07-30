@@ -12,7 +12,7 @@ const ExternalPostLink = (props: ExternalLinkT) => {
     const { url, name } = props;
 
     return (
-        <TLink key={url} href={url} target="_blank" rel="noopener noreferrer" sx={{ variant: `links.primary` }}>
+        <TLink key={url} href={url} target="_blank" rel="noopener noreferrer" sx={{ variant: `links.primary` }} style={{ overflowWrap: "break-word" }}>
             {name ? name : url}
         </TLink>
     )
