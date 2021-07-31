@@ -1,0 +1,30 @@
+---
+title: Różnice pomiędzy npm install a npm ci
+date: 2021-07-31
+tags:
+  - npm
+---
+
+import { jsx, Link as TLink } from "theme-ui"
+import ExternalPostLink from '../../../src/components/ExternalPostLink.tsx';
+
+W poprzednim <TLink href="/blog/instalowanie-zaleznosci-w-projekcie-poprzez-npm-install">wpisie</TLink> opisałem komendę `npm install`.
+Teraz opiszę co robi komenda `npm ci` oraz jakie są różnice między nimi.
+
+Skrót CI oznacza *Continues Integration* i stąd `npm ci` służy do instalacji zależności w środowiskach testowych, continues integration i deploymentu lub w każdej sytuacji gdzie potrzebujemy czystej, nowej instalacji wszystkich paczek.
+
+Komenda `npm ci` jest podobna do `npm install` bo ma za zadanie instalować wszystkie zależności w naszym projekcie.
+Jednak zasadniczą różnicą `npm ci` jest to, że zainstaluje zależności z pliku `package-lock.json` a nie `package.json` tak jak robi to `npm install`.
+Dzięki temu mamy pewność, że zainstalowane zależności na innych środowiskach będą miały dokładnie taką samą wersję.
+
+Krótko mówiąc, różnice między `npm ci` a `npm install`:
+- w projekcie **musi** istnieć plik `package-lock.json`,
+- jeżeli zależności w pliku `package.json` różnią się od tych w `package-lock.json`, `npm ci` zakończy proces z błędem i nie zaktualizuje pliku `package-lock.json`,
+- nie można instalować nowych zależności za pomocą `npm ci`,
+- jeżeli folder `node_modules` istnieje, zostanie on **usunięty** przed rozpoczęciem instalacji zależności,
+- plik `package-lock.json` lub `package.json` nigdy nie zostanie zaktualizowany,
+- `npm ci` jest **szybszy** od `npm install` gdy istnieje w projekcie plik `package-lock.json` i brakuje folderu `node_modules`.
+
+### Przydatne linki
+- <ExternalPostLink url={"https://www.geeksforgeeks.org/difference-between-npm-i-and-npm-ci-in-node-js/?ref=rp"} name={"https://www.geeksforgeeks.org/difference-between-npm-i-and-npm-ci-in-node-js/?ref=rp"} />
+- <ExternalPostLink url={"https://docs.npmjs.com/cli/v7/commands/npm-ci"} name={"https://docs.npmjs.com/cli/v7/commands/npm-ci"} />
