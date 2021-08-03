@@ -18,7 +18,7 @@ Na koniec tego artykułu:
 >
 >Jeśli używasz Git'a na codzień i wiesz o co chodzi z commitami, to prawdopodobnie ten wpis nie jest dla Ciebie, ale zapraszam Cię do przeczytania tego artykułu i podzielenia się swoimi przemyśleniami/uwagami w komentarzach. Twoja opinia jest dla mnie ważna. Podzielenie się swoimi uwagami może pozytywnie wpłynąć na kształt następnych artykułów 🤝
 
-### Czemu Git?
+## Czemu Git?
 
 Jak wspomniałem w moim poprzednim wpisie, Git to obowiązkowe narzędzie każdego programisty. Git pozwala na tworzenie historii twojego kodu, który masz w swoim wybranym folderze, z możliwością przywrócenia stanu twojego projektu z wybranego momentu w czasie. Zapisywanie stanu projektu, przeglądanie jego historii i przywracanie zmian odbywa się lokalnie, więc nie trzeba mieć dostępu do internetu. 
 
@@ -31,7 +31,7 @@ Załóżmy, że piszesz stronę internetową i postanowiłeś dodać menu na gó
 
 Ale zacznijmy od początku...
 
-### Instalacja Git
+## Instalacja Git
 
 Żeby zacząć używać Gita, musisz mieć go zainstalowanego na swoim komputerze. Aby upewnić się, czy Git jest dostępny na twoim komputerze, otwórz terminal i wpisz komendę:
 
@@ -46,7 +46,7 @@ Jeżeli nie zobaczysz konkretnej wersji programu to możesz przejść do instala
 
 Po zakończonej instalacji, aby upewnić się, że wszystko zakończyło się pomyślnie jeszcze raz sprawdź wersję gita, za pomocą komendy, która jest powyżej.
 
-### Konfiguracja Git'a
+## Konfiguracja Git'a
 
 Super, masz zainstalowanego Git'a! Teraz go skonfigurujesz i zaczniesz z niego korzystać.
 
@@ -67,7 +67,7 @@ git config user.name
 git config user.email
 ```
 
-### Zakładanie nowego repozytorium
+## Zakładanie nowego repozytorium
 
 Kilka razy wspomniałem słowo "repozytorium". Co to właściwie jest? Repozytorium to jest konkretny folder na twoim komputerze, którego Git jest świadom. To znaczy, że Git będzie śledził wszystkie zmiany w danym folderze, po to, aby umożliwić Ci ich zapisanie w swojej bazie danych. Każde repozytorium musi mieć swój osobny folder. 
 
@@ -89,7 +89,7 @@ Initialized empty Git repository in /Users/oskarkowalow/Projects/git-test/.git/
 
 Brawo, stworzyłeś nowe repozytorium 🎉. Teraz jest ono puste, ale za chwilę zaczniemy dodawać do niego jakąś zawartość. 
 
-### Rejestrowanie zmian w repozytorium
+## Rejestrowanie zmian w repozytorium
 
 Właśnie przechodzimy do najciekawszej sekcji 🔥. 
 
@@ -133,7 +133,7 @@ Teraz Git mówi nam coś więcej. Widzimy, że nasz plik README.txt jest jako "U
 
 Tutaj dochodzimy do istotnej informacji. Każdy plik może być w jednym z dwóch stanów: **tracked** albo **untracked**. Pliki, które są śledzone (*tracked*) to pliki, które były w ostatnim commicie, czyli już zostały zapisane w historii. Natomiast pliki nieśledzone przez Git'a to wszystko pozostałe, czyli pliki, które ani nie były w poprzednim commitcie, ani nie są w obszarze *staged*, o czym za chwilę opowiem. Póki co widzimy, że nasz nowy plik jest jako *untracked*, więc jedynie co możemy z nim zrobić to dodać go do obszaru *staged*. Zobaczmy jak to wygląda.
 
-#### Śledzenie nowych plików
+### Śledzenie nowych plików
 
 Git doradził nam, że możemy zacząć śledzić nasz nowy plik - zróbmy to.
 
@@ -158,7 +158,7 @@ Teraz plik README.txt jest śledzony oraz jest fazie staged. Staged area oznacza
 
 A więc zapiszmy nasz nowy plik i zróbmy naszego pierwszego commita 🤩.
 
-#### Zatwierdzanie zmian
+### Zatwierdzanie zmian
 
 Mamy wybrany plik README.txt, który chcemy zapisać i znajduje się on w fazie *staged*. Każdy plik, który ma być zapisany musi się znaleźć w tym obszarze, bo inaczej Git go nie zapisze. Wpisujemy:
 
@@ -212,7 +212,7 @@ Stworzyłeś swojego pierwszego commita 🥳.
 
 Zobacz, że dostaliśmy kilka informacji o stworzonym commicie: nazwę brancha na którym jesteśmy (master), SHA-1 (czyli hash SHA-1, informacja, za pomocą której Git zapisuje commita w bazie danych), ile plików się zmieniło oraz ile linii dodaliśmy i ile usunęliśmy.
 
-#### Wyświetlanie historii commitów
+### Wyświetlanie historii commitów
 
 Teraz mając już pierwszego commita za nami możemy wyświetlić historię commitów jakie znajdują się w repozytorium w którym przebywamy. Do tego użyjemy komendy git log, która otworzy nam poglądowe okienko w terminalu i informacją o ostatnich commitach. U mnie wygląda to następująco:
 
@@ -228,7 +228,7 @@ Date:   Sat Aug 8 13:14:49 2020 +0200
 
 Mamy informację o SHA-1 commita, dane autora, datę oraz wiadomość commita. 
 
-#### Zapisywanie modyfikowanych plików
+### Zapisywanie modyfikowanych plików
 
 Dodajmy jakiś tekst do naszego nowo stworzonego pliku README.txt. Możesz wpisać poniższą komendę lub edytować plik swoim ulubionym edytorem tekstu:
 
@@ -330,6 +330,6 @@ Teraz wszystko się zgadza. Robimy commita i nadamy mu tylko tytuł:
 git commit -m "Add new file and modify README"
 ```
 
-### Podsumowanie
+## Podsumowanie
 
 Mam nadzieję, że w tym artykule przybliżyłem Ci obsługę Git'a. Jeśli jeszcze nie zacząłeś go używać to warto to robić dla każdego swojego projektu, po to, aby śledzić proces swojej nauki. Jeśli coś było dla Ciebie niejasne, lub po prostu chcesz się podzielić swoimi przemyśleniami to serdecznie zapraszam Cię do sekcji komentarzy. Widzimy się w następnych 🤚

@@ -10,17 +10,17 @@ import ExternalPostLink from '../../../src/components/ExternalPostLink.tsx';
 
 Cześć, witaj w kolejnym artykule poświęconym podstawom Git'a 🤚😀. W tym odcinku przyjrzymy się tematowi branchów. Jeśli chcesz nauczyć się korzystać z narzędzia, które pozwoli Ci na pracę grupową w projekcie, to trafiłeś w dobre miejsce 👏. W tym artykule chcę przedstawić Ci w prosty sposób ideę branchy i odczarować strach przed ich swobodnym wykorzystaniem 🧙‍♂️.
 
-### Dla kogo ten wpis?
+## Dla kogo ten wpis?
 
 Ten wpis przeznaczony jest dla osób początkujących, którzy albo nie spotkali się z branchami w praktyce, albo nie dokońca wiedzą jak się z nimi obchodzić. W tym wpisie, przedstawię Ci w łatwy sposób koncepcję branchy w Git'cie, pokażę jakie problemy rozwiązują oraz przede wszystkim, jakie niosą korzyści. Ten wpis będzie w formie poradnika/tutoriala. Przeprowadzę Cię przez zachowanie branchy w praktyce oraz pokażę przydatne komendy, które są niezbędne do efektywnej pracy. Mimo tego, że w tym wpisie nie dotkniemy mergowania branchy to zrozumiesz jak pracować na osobnych branchach, dzięki czemu łączenie osobnych branchy będzie zrozumiałe.
 
-### Słowem wstępu...
+## Słowem wstępu...
 
 Branche są na początku trudnym orzechem do zgryzienia. Trzeba dobrze zrozumieć koncepcję branchy i ich działanie. Uważam, że jest wiele poradników na temat Git'a, które są bardzo dobre, ale jednocześnie potrafią być bardzo obszerne, przez co trudniej jest załapać sens i faktycznie zacząć korzystać z omawianego narzędzia. Mimo masy poradników na temat Git'a, chcę dołożyć swoją cegiełkę do tej konstrukcji i pomóc osobom początkującym rozpoczęcie efektywnej i pewnej pracy w Git'cie.
 
 > 👉 Zachęcam zaawansowanych użytkowników do przeczytania tego artykułu i podzielenia się swoimi przemyśleniami oraz własnym doświadczeniem w sekcji komentarzy. Podzielenie się swoją wiedzą i przydanymi linkami może pomóc nie tylko mi, ale przede wszystkim osobom, które dopiero zaczynają swoją przygodę z programowaniem💡
 
-### Trochę mojej historii...
+## Trochę mojej historii...
 
 Pamiętam, że nauka Git'a nie przychodziła mi łatwo. Wiedziałem po co jest Git i mniej więcej wiedziałem jak go obsługiwać, ale nie miałem pewności w tym co robię. Jedynie z łatwością przychodziło mi commitowanie mojej pracy w projektach, które sam robiłem (stronki internetowej, ćwiczenia z JS'a, aplikacje webowe). O takiej podstawowej pracy w repozytorium pisałem w <TLink href="https://www.oskarkowalow.pl/blog/git-podstawowa-praca-w-lokalnym-repozytorium">poprzednim wpisie</TLink>. Wpis ten miał pokazać podstawową pracę 
 w projekcie przy użyciu Git'a i przełamać opory do jego używania. To co tam napisałem, to taki podstawowy workflow podczas samodzielnej pracy nad konkretnym zadaniem. I taki model pracy sprawdza się, ale problem pojawia się w pracy grupowej... a bez branchy nie ma pracy grupowej. 
@@ -29,7 +29,7 @@ Największym powodem mojej frustracji były branche w Git'cie. Kiedy byłem na k
 
 Także praca w Git'cie to nie jest prosta sprawa, tym bardziej jak pracuje się w grupie i dopiero zaczyna się swoją przygodę z tym narzędziem. Dlatego teraz piszę artykuły o Git'cie, bo chcę Ci tych frustracji oszczędzić. Wierzę, że wystarczy dobrze zrozumieć podstawy i można swobodnie zacząć korzystać z tego narzędzia. Git umożliwia pracę w grupie i generalnie jest prosty w codziennym użytkowaniu. To czym się podzielę w tym wpisie, to wiedza, której używam na codzień i osobiście rzadko robię coś ponad ten workflow.
 
-### Po co te branche?
+## Po co te branche?
 
 Branch (ang. *gałąź*) w Git'cie oznacza odgałęzienie od głównej linii developmentu i rozpoczęcie pracy nad częścią aplikacji w separacji. Tworząc repozytorium, do dyspozycji mamy domyślny branch o nazwie *master*. Z poprzedniego wpisu wiemy jak commitować swoją pracę na tym branchu (nieświadomie rozpoczeliśmy pracę z branchami 😄). Na domyślnym branchu *master* trzymamy **pewny, działający** kod. Pewny i działający kod to taki, co do którego mamy pewność, że w tym momencie w czasie, nasza strona lub aplikacja spełnia nasze oczekiwania co do funkcjonalności i niezawodności. Hmm... Z tą niezawodnością bywa różnie, ale o tym za chwilę 😅. 
 
@@ -41,7 +41,7 @@ Konkluzja jest taka, że branche pozwalają na równoległą pracę w projekcie 
 
 Ogólnie wiemy o co chodzi w branchach i po co się je używa. Przejdźmy zatem do praktyki 👨‍💻👩‍💻.
 
-### Branche w pigułce
+## Branche w pigułce
 
 W moim poprzednim wpisie, wyjaśniłem jak stworzyć lokalne repozytorium i jak zapisywać pliki w historii swojego projektu. Tworząc lokalne repozytorium mamy do dyspozycji branch *master*. Można to sprawdzić komendą `git status`:
 
@@ -61,7 +61,7 @@ Obok SHA commita zobaczysz `(HEAD -> master)`, co oznacza, że aktualnie jesteś
 
 W gruncie rzeczy branch *master*, jak również każdy inny branch, wskazuje na ostatni wykonany commit w danym branchu. Branch to taki odnośnik do ostatniego wykonanego commita i serii commitów wykonanej w przeszłości. Aktualnie będąc na branchu *master*, jesteś jednocześnie na ostatnim wykonanym commicie w tym branchu. W tym miejscu pliki mają swoją określoną zawartość, która zapisana jest w pod postacią commita. 
 
-### Tworzenie branchy
+## Tworzenie branchy
 
 Stwórzmy nowego brancha:
 
@@ -86,7 +86,7 @@ git branch *nazwa-brancha*
 
 Powyższa komenda tworzy nowy branch.
 
-### Przechodzenie między branchami
+## Przechodzenie między branchami
 
 Przejdźmy sobie na nowego brancha i zróbmy na nim konkretną pracę. Tą pracą niech będzie modyfikacja zawartości pliku README.txt (w swoim folderze mam tylko ten plik).
 
@@ -157,7 +157,7 @@ Date:  Sat Aug 15 12:15:48 2020 +0200
 
 Faktycznie, na branchu master mamy tylko jeden commit i nie ma w nim commitów z brancha *text-in-readme*! To jest najważniejsza informacja. Na osobnym branchu mamy pliki, które są w takim stanie, w jakim były podczas tworzenia ostatniego commita. Przełączanie się między branchami sprawia, że pliki zmieniają swoją zawartość w danym repozytorium. 
 
-### Cofanie się w przeszłość
+## Cofanie się w przeszłość
 
 Stwórzmy sobie jeszcze jednego commita na branchu *text-in-readme* aby nasza historia była trochę większa:
 
@@ -205,7 +205,7 @@ I zawartość pliku README.txt też jest taka, jaka była w tym commicie:
 Pierwsze zdanie w pliku
 ```
 
-### Rozbieżna historia
+## Rozbieżna historia
 
 A co z naszym branchem *master*? Przełączmy się na mastera i zobaczmy, co tam mamy:
 
@@ -239,11 +239,11 @@ git log --oneline --decorate --graph --all
 
 Generalnie ten graf pokazuje nam efekt wykonanej pracy na naszych obu branchach wraz z historią commitów na tych branchach. Widać, że branch *master* ma inną historię od brancha *text-in-readme* i te zmiany są zróżnicowane, na co wskazuje graficzne rozgałęzienie. Branch *text-in-readme* stał się dosłownie osobną gałęzią wraz z swoją historię zmian i swoją zawartością plików, podczas gdy branch *master* też ma swoją, osobną historię zmian i zawartość plików. 
 
-### Co można zrobić z branchami?
+## Co można zrobić z branchami?
 
 W tym momencie możemy zdecydować, że chcemy mieć połączone oba branche i do naszego głównego brancha *master* chcemy dorzucić pliki znajdujące się na branchu *text-in-readme*. Takie scalenie branchy nazywa się merging. Takiego scalenia dokonuje się w momencie, kiedy na danym branchu skończyliśmy tworzyć jakąś pracę i jesteśmy gotowi dołączyć nasze zmiany do głównej linii dewelopmentu, do głównego brancha, czyli do naszego pnia, brancha *master*, tam gdzie jesteśmy pewni, że nasza aplikacja lub strona wygląda i działa tak jak powinna.
 
-### Podsumowanie
+## Podsumowanie
 
 Przeszliśmy przez tworzenie branchy i na każdym branchu zrobiliśmy inną pracę co spowodowało, że na obu branchach mamy osobną historię zmian 🎉. Jest to główna cecha branchy i to co jest najważniejsze podczas pracy z branchami. Zrozumienie, że każdy branch zawiera inne pliki i inną historię commitów to clue tego wpisu. W następnym artykule opowiem więcej, jak połączyć te branche ze sobą i na jakie problemy można się natknąć podczas scalania branchy. 
 

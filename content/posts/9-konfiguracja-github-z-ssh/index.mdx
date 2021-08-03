@@ -11,12 +11,12 @@ import ExternalPostLink from '../../../src/components/ExternalPostLink.tsx';
 W tym wpisie opiszę jak w łatwy sposób połączyć się z Github-em za pomocą SSH.
 Dzięki takiemu połączeniu możemy rozpocząć pracę ze zdalnym repozytorium, czyli zrobić `git clone` poprzez SSH zamiast HTTPS i dalej pracować z repo nie podając loginu i hasła podczas każdego push-a.
 
-### Warunki wstępne
+## Warunki wstępne
 
 - musisz mieć konto na 
  <ExternalPostLink name="Github" url="https://github.com" />
 
-### Po co SSH?
+## Po co SSH?
 
 Próbując sklonować jakieś repozytorium z Github-a, np. <ExternalPostLink url={"https://github.com/Osky772/www.oskarkowalow.pl"} name={"https://github.com/Osky772/www.oskarkowalow.pl"} /> poprzez SSH dostaniemy podobny error:
 
@@ -30,7 +30,7 @@ fatal: The remote end hung up unexpectedly
 
 To oznacza, że nie mamy wygenerowanego klucza SSH.
 
-### Konfiguracja
+## Konfiguracja
 
 1. W terminalu uruchom: `cd ~/.ssh && ssh-keygen`,
 2. Dalej w terminalu uruchom: `ssh-add ~/.ssh/id_rsa`,
@@ -52,7 +52,7 @@ To oznacza, że nie mamy wygenerowanego klucza SSH.
     - Oraz `git config --global user.email oskar@...`,
 6. Zrestartuj terminal, aby mieć pewność, że config się przeładował.
 
-### Koniec
+## Koniec
 
 Brawo 👏, teraz wszystko powinno działać! Możemy klonować i commitować do zdalnego repo.
 
