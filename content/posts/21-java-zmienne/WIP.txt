@@ -1,0 +1,19 @@
+---
+title: Deklaracja i inicjalizacja zmiennych w Javie
+date: 2021-09-03
+tags:
+  - Java
+---
+
+import { jsx, Link as TLink } from "theme-ui"
+import ExternalPostLink from '../../../src/components/ExternalPostLink.tsx';
+import Code from "@lekoarts/gatsby-theme-minimal-blog/src/components/code"
+
+Java to język silnie typowany, czyli każda zmienna musi mieć określony typ.
+Żeby utworzyć zmienną musimy ją **zadeklarować**, czyli określić jej typ i nadać jej nazwę.
+Dodatkowo możemy ją **zainicjować**, a więc przyisać jej wartość.
+
+```
+[typ zmiennej] nazwaZmiennej;
+
+```
