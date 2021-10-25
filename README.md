@@ -7,3 +7,5 @@ More info about the Theme and usage in [`@lekoarts/gatsby-theme-minimal-blog`](h
 Site is deployed on Netlify after every push to the `main` branch.
 `.env.example` isn't necessary for now, since the environment ariables are configured on Netlify.
 
+
+
