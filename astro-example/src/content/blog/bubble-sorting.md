@@ -1,0 +1,91 @@
+---
+title: Algorytm sortowania bąbelkowego
+description: Zasada działania algorytmu sortowania bąbelkowego opiera się na porównywaniu dwóch sąsiadujących elementów i zamianie ich kolejności.
+pubDate: 2021-10-24
+tags:
+  - Algorytmika
+  - JavaScript
+---
+
+Zasada działania algorytmu sortowania bąbelkowego opiera się na porównywaniu dwóch sąsiadujących elementów i zamianie ich kolejności, gdy nie spełniają kryterium porządkowego zbioru.
+Dane wejściowe to nieuporządkowana lista elementów, np. liczb.
+Dane wyjściowe zkolei to lista uporządkowana w kolejności wzrastającej.
+
+Jeżeli przeiterujemy nieuporządkowaną listę element po elemencie, zamieniając miejscami dwa sąsiednie elementy za każdym razem, gdy pierwszy element będzie większy niż drugi, to po zakończeniu iteracji, największy element będzie na swoim odpowiednim miejscu, tj. na końcu listy.
+
+## Przykład
+
+Aby lepiej zobrazować działanie tego algorytmu posłużmy się przykładem.
+
+W naszym przypadku nieuporządkowaną listą elementów jest zbiór pięciu liczb {5,4,3,2,1}, który jest posortowany w kierunku odwrotnym (tj. największy element jest po lewej stronie listy, a pożądana kolejność zakłada, że ten element powinien być na końcu listy po prawej stronie).
+Jest to najbardziej niekorzystny przypadek, ponieważ musimy przesortować wszystkie elementy ze zbioru.
+Zarazem ten przykład najlepiej ilustruje działanie algorytmu sortowania bąbelkowego.
+
+| Przebieg      | Zbiór         | Opis akcji                                                                                             |
+| --------      | -----         | ----------                                                                                             |
+| 1             | **5 4** 3 2 1 | Porównujemy pierwszą parę elementów i wymagają one posortowania                                        |
+|               | 4 **5 3** 2 1 | Kolejna para wymaga zamiany                                                                            |
+|               | 4 3 **5 2** 1 | Następna para też musi mieć zmienioną kolejność                                                        |
+|               | 4 3 2 **5 1** | I ostatnia para musi mieć zmienioną kolejność                                                          |
+|               | 4 3 2 1 **5** | Stan po pierwszym przebiegu. Największa liczba jest na końcu listy, a najmniejsza przesuwa się w lewo. |
+| 2             | **4 3** 2 1 5 | Para wymaga zamiany                                                                                    |
+|               | 3 **4 2** 1 5 | Para wymaga zamiany                                                                                    |
+|               | 3 2 **4 1** 5 | Para wymaga zamiany                                                                                    |
+|               | 3 2 1 **4** 5 | Stan po drugim przebiegu. Widać jak najmniejsza liczba przesuwa się ciągle w lewo.                     |
+| 3             | **3 2** 1 4 5 | Para wymaga zamiany                                                                                    |
+|               | 2 **3 1** 4 5 | Para wymaga zamiany                                                                                    |
+|               | 2 1 **3** 4 5 | Stan po trzecim przebiegu. Następne liczby są w dobrej kolejności i wymagają zamiany.                  |
+| 4             | **2 1** 3 4 5 | Para wymaga zamiany                                                                                    |
+|               | 1 **2** 3 4 5 | Wszystki kolejne liczby są w dobrej kolejności i nie wymagają zamiany.                                 |
+
+Nazwa sortowanie "bąbelkowe" odzwierciedla sposób, w jaki największe elementy, wędrują niczym bąbelki na koniec listy, wymieniając się miejscami z mniejszymy elementami.
+Po każdym przebiegu największa liczba znajduje się w odpowiednim dla siebie miejscu, czyli na końcu listy, a najmniejszy element przesuwa się o jedno miejsce w stronę początku listy.
+
+Przykładowo posortowanie 5 elementowego zbioru wymaga maksymalnie 4 przebiegów.
+W wariancie najbardziej niekorzystnym najmniejszy element znajduje się na końcu listy i wymaganych jest wykonanie 4 przebiegów. 
+Na koniec każdego przebiegu, element najmniejszy zbliża się o jedno miejsce w stronę początku listy.
+Wniosek tego spostrzeżenia jest taki, że posortowanie każdego zbioru wymaga maksymalnie *N - 1* przebiegów (przy czym *N* to liczba elementów w zbiorze).
+
+Słownie możemy opisać ten algorytm następująco:
+
+```
+1. wykonaj N - 1 razy następujące instrukcje:
+  1.1 złap pierwszy element
+  1.2 wykonaj N - 1 razy następujące instrukcje:
+    1.2.1 porównaj złapany element z kolejnym elementem
+    1.2.2 jeżeli porównywane elementy nie są w odpowiedniej kolejności to zamień je miejscami
+    1.2.3 złap kolejny element
+```
+
+Wprawne programistyczne umysły zauważą tutaj zagnieżdżoną pętlę i jedną instrukcję warunkową.
+Postaramy się przełożyć ten algorytm do świata JavaScriptu.
+
+## Implementacja algorytmu
+
+Zaimplementujemy ten przypadek, który opisałem powyżej.
+
+Chcemy posortować listę 5 elementów - liczb.
+Dane wejściowe to lista w kolejności od największej do najmniejszej.
+Wynikiem, czyli danymi wyjściowymi, ma być lista posortowana od najmniejszej do największej. 
+
+```js
+const list = [5,4,3,2,1];
+
+for (let i = 0; i <= list.length - 1; i++) {
+  for (let y = 0; y <= list.length - 1; y++) {
+    const previousElement = list[y]
+    const nextElement = list[y + 1]
+     if (previousElement > nextElement) {
+       list[y + 1] = previousElement;
+       list[y] = nextElement;
+     }
+  }
+}
+
+console.log(list) // [1, 2, 3, 4, 5]
+```
+
+### Źródła
+- książka "Rzecz o istocie informatyki - Algorytmika" David Harel
+- [Algorytmy sortowania](https://eduinf.waw.pl/inf/alg/003_sort/0004.php)
+- [Sortowanie bąbelkowe - Wikipedia](https://pl.wikipedia.org/wiki/Sortowanie_b%C4%85belkowe)
