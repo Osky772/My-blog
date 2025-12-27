@@ -1,0 +1,64 @@
+---
+title: Czym jest Scrum?
+description: Załóżmy, że wraz z innymi osobami chcesz stworzyć jakiś produkt. Podczas jego planowania i wytwarzania pojawi się masa pytań i problemów, z którymi trzeba się z
+pubDate: 2021-08-01
+tags: []
+---
+
+
+Załóżmy, że wraz z innymi osobami chcesz stworzyć jakiś produkt.
+Podczas jego planowania i wytwarzania pojawi się masa pytań i problemów, z którymi trzeba się zmierzyć.
+Przykładowe pytania i problemy:
+- Jak będzie wyglądał proces tworzenia?
+- Chcesz wiedzieć, gdzie się znajdujecie w dowolnym momencie pracy,
+- Chcesz reagować na zmiany rynku, otoczenia czy oczekiwań klienta, 
+- W trakcie pracy nad produktem sporo nauczyłeś się o organizacji pracy i warto byłoby skorzystać z tej wiedzy, aby usprawnić proces,
+- Różne ryzyka i niewiadome, przez które nawet nie jest możliwe zaplanowanie wszystkich aktywności.
+
+W odpowiedzi na te i inne problemy został stworzony Scrum.
+
+## Co to jest Scrum?
+
+**Scrum** to zwinna metoda (Agile) wytwarzania nowych produktów i usług.
+Scrum jest najczęściej stosowany do wytwarzania i rozwijania oprogramowania, ale nie jest ograniczony tylko to tej dziedziny.
+Scrum oparty jest na rozwoju produktu w małych iteracjach. Po zakończeniu każdej iteracji zespół powinien dostarczyć działającą wersję produktu.
+Dzięki takim iteracjom potrafimy określić, gdzie jesteśmy i mamy działającą wersję produktu.
+
+Scrum bazuje na pracy **zespołu**. W skład zespołu wchodzą:
+- **Deweloperzy (Developers)**: osoby odpowiedzialne za wytwarzanie i rozwój produktu, np. wprowadzanie nowych funkcjonalności,
+- **Właściciel Produktu (Produkt Owner lub PO)**: ma wizję produktu i decyduje o priorytetach,
+- **Scrum Master (SM)**: nadzoruje przebieg prac. Dzięki obserwacji może dzielić się przemyśleniami i wspierać współpracę w zespole.
+
+## Proces Scrum
+
+Zespół pracuje w iteracjach, czyli w określonych przedziałach czasowych zwanych **sprintami**.
+Sprint trwa od 1 do 4 tygodni. W ciągu jednego sprintu zespół dostarcza nową wersję produktu lub jakąś nową funkcjonalność.
+
+Na początku pracy zbierane są wymagania dotyczące produktu i każda cecha produktu nazywana jest **historyjką (*User Stories*)**.
+Product Owner określa główny **cel produktu (*Product Goal*)** oraz tworzy **Backlog Produktu (*Product Backlog*)** w przedstawia priorytety wymagań na każdy sprint.
+Na koniec każdego sprintu Product Owner chce zaprezentować efekt prac swoim interesariuszom i klientom, aby uzyskać informację zwrotną.
+Dlatego na początku sprintu zespół **planuje prace (*Sprint Planning*)** i wybiera zadania o najwyższym priorytecie z Backlogu Produktu.
+Ustalony plan na dany sprint nazywa się **Backlogiem Sprintu (*Sprint Backlog*)**, aby odróżnić go od Backlogu Produktu.
+
+Następnie zespół zabiera się do realizacji sprintu. 
+W trakcie trwania sprintu Product Owner pracuje razem z zespołem nad jak najlepszym zrozumieniem wymagań, nie wchodząc w szczegóły implementacyjne.
+Nie powinno się zmieniać zakresu sprintu.
+
+Zespół z założenia jest samo organizujący się i nie można przypisywać zadań określonym członkom zespołu.
+Każdy powinien sam wybrać realizowane zadanie według wspólnych ustaleń, umiejętności czy preferencji.
+
+Członkowie zespołu przeprowadzają **codzienne spotkania (*Daily Scrum*)** trwające maksymalnie 15 minut, na których omawiane są wykonane zadania z poprzedniego dnia, ewentualne problemy podczas ich realizacji oraz zadania do wykonania w dniu spotkania. 
+
+W trakcie sprintu zespół chce przygotować się do kolejnych sprintów, dlatego organizowane jest spotkanie, na którym przeglądają, omawiają i **porządkują Backlog Produktu (*Product Backlog refinement*)**.
+
+Każdy sprint kończy się **przeglądem sprintu (*Sprint Review*)**, na którym zespół wraz z Product Ownerem prezentuje produkt, który został wykonany podczas sprintu.
+Na takim spotkaniu powinni być obecny wszyscy interesariusze produktu.
+Product Owner po otrzymaniu informacji zwrotnej dostosowuje dalszy kierunek rozwoju produktu, aktualizując Backlog Produktu.
+
+Na koniec zespół dokonuje **retrospektywy sprintu (*Sprint Retrospective*)** i ustalają, w jaki sposób mogliby pracować skuteczniej w następnym sprincie.
+
+### Źródła
+
+- [https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Polish.pdf](https://scrumguides.org/docs/scrumguide/v2020/2020-Scrum-Guide-Polish.pdf)
+- [https://pl.wikipedia.org/wiki/Scrum](https://pl.wikipedia.org/wiki/Scrum)
+- [https://procognita.pl/post/co-to-jest-scrum](https://procognita.pl/post/co-to-jest-scrum)

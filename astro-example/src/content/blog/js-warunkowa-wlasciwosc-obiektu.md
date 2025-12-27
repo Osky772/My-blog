@@ -1,0 +1,66 @@
+---
+title: Jak warunkowo dodać właściwość do obiektu?
+description: Jak możemy warunkowo dodać jakąś właściwość do obiektu? Można to zrobić na kilka sposobów.
+pubDate: 2021-10-12
+tags: []
+---
+
+
+Jak możemy warunkowo dodać jakąś właściwość do obiektu?
+Można to zrobić na kilka sposobów.
+
+## if...else
+
+Tradycyjny sposób to dodanie prostego if'a:
+
+```js
+const obj = {
+  a: 1
+}
+
+if (someCondition) {
+  obj.b = 2;
+}
+
+JSON.stringify(obj) // '{"a":1,"b":2}'
+```
+
+Działa, aczkolwiek nie jest to zbyt eleganckie podejście.
+
+## Spread operator
+
+Najbardziej idiomatyczne rozwiązanie, to wykorzystanie *spread operator* wewnątrz obiektu, wraz z operatorem logicznym `&&`.
+
+```js
+const obj = {
+  a: 1,
+  ...someCondition && {b: 2}
+}
+
+JSON.stringify(obj) // '{"a":1,"b":2}'
+```
+
+Co się tutaj dzieje?
+Operator logiczny `&&` zwróci wyrażenie po jego prawej stronie, jeżeli wyrażenie z lewej strony będzie *truthy*.
+Gdyby po lewej stronie operatora, wyrażenie miało wartość `false` (lub jakąkolwiek inną wartość *falsy* - `null`, `undefined`, `0`, `""`), to zwrócona byłaby ta wartość.
+A więc, gdyby `someCondition` miało wartość `true` to zostałby zwrócony obiekt `{b: 2}`.
+
+Teraz wkracza *spread operator* (`...`), który "rozbija" obiekt po swojej prawej stronie i zwraca wszystkie właściwości tego obiektu.
+Ponadto, gdy *spread operator* natrafi po swojej prawej stronie np. na `false` lub `null` to nic się nie wydazry i nic nie przypisze do obiektu.
+
+Zatem `...someCondition && {b: 2}` zwróci albo właściwości obiektu po prawej stronie operatora `&&` albo nic się nie wydarzy.
+
+## Finalne rozwiązanie
+
+Aby całość była bardziej czytelna, możemy dodać okrągłe nawiasy do całego wyrażenia:
+
+```js
+const obj = {
+  a: 1,
+  ...(someCondition && {b: 2})
+}
+```
+
+### Źródła
+- [https://stackoverflow.com/questions/11704267/in-javascript-how-to-conditionally-add-a-member-to-an-object](https://stackoverflow.com/questions/11704267/in-javascript-how-to-conditionally-add-a-member-to-an-object)
+- [https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Spread_syntax)

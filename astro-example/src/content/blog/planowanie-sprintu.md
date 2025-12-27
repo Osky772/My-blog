@@ -1,0 +1,53 @@
+---
+title: Po co nam Planowanie Sprintu?
+description: Każdy Sprint zaczyna się od Planowania Sprintu (ang. *Sprint Planning*). Jest to spotkanie, podczas którego Zespół Scrumowy ustala, jakie wymagania wdroży w cią
+pubDate: 2021-08-19
+tags: []
+---
+
+
+Każdy Sprint zaczyna się od Planowania Sprintu (ang. *Sprint Planning*).
+Jest to spotkanie, podczas którego Zespół Scrumowy ustala, jakie wymagania wdroży w ciągu najbliższego Sprintu oraz jakie korzyści biznesowe przyniesie to interesariuszom.
+
+Na Planowaniu Sprintu obecny jest cały Zespół Scrumowy.
+Celem tego spotkania jest zastanowienie się co Zespół może zrobić w najbliższym Sprincie, jak to zrobi i przede wszystkim po co będzie realizowany ten Sprint.
+Efektem Planowania jest **Backlog Sprintu** oraz **Cel Sprintu**.
+
+## Etapy planowania Sprintu
+
+Odpowiedź na pytanie "co można zrobić w najbliższym Sprincie?" jest możliwa dzięki Product Ownerowi, który przedstawia Backlog Produktu przedstawiając, co chciałby osiągnąć kolejnym Przyrostem Produktu, oraz które wymagania powinny zostać zrealizowane, aby ten Przyrost uzyskać.
+
+Następnie Deweloperzy podejmują dyskusję, analizują Backlog Produktu oraz prognozują, które zadania są w stanie zrobić w najbliższym Sprincie.
+Wymagania, które zostały ujęte w tej prognozie wchodzą do najbliższego Sprintu.
+Na tej podstawie Zespół wypracowuje Cel Sprintu, który zostanie osiągnięty w wyniku implementacji wybranych wymagań.
+
+Po ustaleniu Celu Sprintu, Deweloperzy tworzą projekt prac nad wybranymi wymaganiami do Sprintu.
+Wymagania wraz z ustalonym planem prac tworzą Backlog Sprintu.
+
+## Backlog Sprintu
+
+Backlog Sprintu obejmuje wymagania nad którymi Zespół zajmować się będzie w czasie Sprintu, aby osiągnąć zdefiniowany Cel Sprintu. 
+W ramach Backlogu Sprintu mogą się pojawić nie tylko wymagania biznesowe, ale też takie rzeczy jak bieżące utrzymanie, naprawa błędów, czy usprawnienia z ostatniej Retrospekcji.
+
+Deweloperzy są właścicielami Backlogu Sprintu i oni decydują o jego zawartości, oraz o tym jak chcą te wymagania zrobić.
+To Backlog Sprintu odpowiada "jak?" Zespół chce wykonać wymagania w najbliższym Sprincie.
+Zazwyczaj wymagania w formie Historyjek Użytkownika (ang. User Stories) są dekomponowane na poszczególne zadania po to, aby umożliwić pracę nad jednym wymaganiem kilku deweloperom.
+
+Backlog Sprintu jest żywy i odzwierciedla aktualny stan prac.
+Zapewnia on przejrzystość postępu prac w Sprincie i ukazuje plan Deweloperów na osiągnięcie Celu Sprintu oraz pozostałych zadań.
+
+## Cel Sprintu
+
+Cel Sprintu odpowiada na pytanie "po co?" robimy dany Sprint i jaką wartość przyniesie on interesariuszom.
+
+Zespół, w ślad za jedną z Wartości Scruma jaką jest skupienie, organizuje swoją pracę, aby wykonać Cel Sprintu i eliminuje wszelkie problemy czy utrudnienia, które mogą ich oddalić od wykonania tego Celu. 
+
+W trakcie Sprintu mogą pojawić się wydarzenia nieprzewidywalne, których Zespół nie założył w czasie Planowania, a które znacznie spowalniają pracę w Sprincie. 
+Biorąc pod uwagę Cel Sprintu, można zastanowić się z jakich zadań warto zrezygnować po to, aby Cel był nadal osiągalny.
+Taki kompromis powinien być zawsze ustalany razem z Właścicielem Produktu.
+
+### Źródła
+
+- [http://scrum.org.pl/planowanie-backlog-cel-sprintu/](http://scrum.org.pl/planowanie-backlog-cel-sprintu/)
+- [https://mfiles.pl/pl/index.php/Planowanie_sprintu](https://mfiles.pl/pl/index.php/Planowanie_sprintu)
+- [https://bialko.eu/agile/sprint-planning/](https://bialko.eu/agile/sprint-planning/)

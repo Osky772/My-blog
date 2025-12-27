@@ -1,11 +1,10 @@
 ---
 title: Algorytm sortowania bąbelkowego
-description: Zasada działania algorytmu sortowania bąbelkowego opiera się na porównywaniu dwóch sąsiadujących elementów i zamianie ich kolejności.
+description: Zasada działania algorytmu sortowania bąbelkowego opiera się na porównywaniu dwóch sąsiadujących elementów i zamianie ich kolejności, gdy nie spełniają kryteriu
 pubDate: 2021-10-24
-tags:
-  - Algorytmika
-  - JavaScript
+tags: ["Algorytmika"]
 ---
+
 
 Zasada działania algorytmu sortowania bąbelkowego opiera się na porównywaniu dwóch sąsiadujących elementów i zamianie ich kolejności, gdy nie spełniają kryterium porządkowego zbioru.
 Dane wejściowe to nieuporządkowana lista elementów, np. liczb.
@@ -25,8 +24,8 @@ Zarazem ten przykład najlepiej ilustruje działanie algorytmu sortowania bąbel
 | --------      | -----         | ----------                                                                                             |
 | 1             | **5 4** 3 2 1 | Porównujemy pierwszą parę elementów i wymagają one posortowania                                        |
 |               | 4 **5 3** 2 1 | Kolejna para wymaga zamiany                                                                            |
-|               | 4 3 **5 2** 1 | Następna para też musi mieć zmienioną kolejność                                                        |
-|               | 4 3 2 **5 1** | I ostatnia para musi mieć zmienioną kolejność                                                          |
+|               | 4 3 **5 2** 1 | Następna para też musi mieć zmienioną kolejność                                                        |
+|               | 4 3 2 **5 1** | I ostatnia para musi mieć zmienioną kolejność                                                          |
 |               | 4 3 2 1 **5** | Stan po pierwszym przebiegu. Największa liczba jest na końcu listy, a najmniejsza przesuwa się w lewo. |
 | 2             | **4 3** 2 1 5 | Para wymaga zamiany                                                                                    |
 |               | 3 **4 2** 1 5 | Para wymaga zamiany                                                                                    |
@@ -48,7 +47,7 @@ Wniosek tego spostrzeżenia jest taki, że posortowanie każdego zbioru wymaga m
 
 Słownie możemy opisać ten algorytm następująco:
 
-```
+```noLineNumbers
 1. wykonaj N - 1 razy następujące instrukcje:
   1.1 złap pierwszy element
   1.2 wykonaj N - 1 razy następujące instrukcje:
@@ -87,5 +86,5 @@ console.log(list) // [1, 2, 3, 4, 5]
 
 ### Źródła
 - książka "Rzecz o istocie informatyki - Algorytmika" David Harel
-- [Algorytmy sortowania](https://eduinf.waw.pl/inf/alg/003_sort/0004.php)
-- [Sortowanie bąbelkowe - Wikipedia](https://pl.wikipedia.org/wiki/Sortowanie_b%C4%85belkowe)
+- [https://eduinf.waw.pl/inf/alg/003_sort/0004.php](https://eduinf.waw.pl/inf/alg/003_sort/0004.php)
+- [https://pl.wikipedia.org/wiki/Sortowanie_b%C4%85belkowe](https://pl.wikipedia.org/wiki/Sortowanie_b%C4%85belkowe)
