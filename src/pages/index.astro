@@ -36,7 +36,7 @@ const latestPosts = allPosts.sort((a, b) =>
             <p>{post.data.description}</p>
             {post.data.tags && (
               <div class="tags">
-                {post.data.tags.slice(0, 2).map((tag) => (
+                {post.data.tags.map((tag) => (
                   <span class="tag">{tag}</span>
                 ))}
               </div>
