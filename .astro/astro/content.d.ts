@@ -162,6 +162,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"discovery-i-delivery.md": {
+	id: "discovery-i-delivery.md";
+  slug: "discovery-i-delivery";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "filary-scruma.md": {
 	id: "filary-scruma.md";
   slug: "filary-scruma";
