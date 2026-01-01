@@ -45,6 +45,11 @@ const { title, description = "Blog Oskara Kowalów o programowaniu" } = Astro.pr
   </body>
 </html>
 
+<script>
+  import { inject } from "@vercel/analytics";
+  inject();
+</script>
+
 <style>
   :root {
     --color-text: #2d3748;
