@@ -2,7 +2,6 @@
 title: Po co nam Doskonalenie Backlogu Produktu?
 description: Doskonalenie Backlogu Produktu (ang. *Product Backlog Refinement*) polega na... doskonaleniu Backlogu Produktu 😅. Więc jak to właściwie wygląda?
 pubDate: 2021-08-20
-tags: []
 ---
 
 

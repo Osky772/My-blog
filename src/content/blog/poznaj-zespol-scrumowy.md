@@ -2,7 +2,6 @@
 title: Scrum Team i jego role
 description: Podstawowym elementem Scruma jest **zespół**, czyli Scrum Team. To właśnie Scrum Team jest odpowiedzialny za dostarczanie złożonych produktów.
 pubDate: 2021-08-16
-tags: []
 ---
 
 

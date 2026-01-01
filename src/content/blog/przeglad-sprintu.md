@@ -2,7 +2,6 @@
 title: Co to jest Sprint Review?
 description: Przegląd Sprintu (ang. *Sprint Review*) to spotkanie organizowane na koniec każdego Sprintu na którym obecni są członkowie Zespołu Scrumowego oraz interesariusz
 pubDate: 2021-08-17
-tags: []
 ---
 
 

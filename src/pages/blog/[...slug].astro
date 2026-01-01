@@ -18,20 +18,11 @@ const { Content } = await entry.render();
   <article>
     <header class="post-header">
       <h1 class="post-title">{entry.data.title}</h1>
-      <div class="post-meta">
-        <time class="post-date">{entry.data.pubDate.toLocaleDateString('pl-PL', {
-          year: 'numeric',
-          month: 'long',
-          day: 'numeric'
-        })}</time>
-        {entry.data.tags && (
-          <div class="post-tags">
-            {entry.data.tags.map((tag) => (
-              <span class="post-tag">{tag}</span>
-            ))}
-          </div>
-        )}
-      </div>
+      <time class="post-date">{entry.data.pubDate.toLocaleDateString('pl-PL', {
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+      })}</time>
     </header>
     
     <div class="post-content">
@@ -55,40 +46,18 @@ const { Content } = await entry.render();
     font-size: var(--font-size-3xl);
     font-weight: 700;
     color: var(--color-heading);
-    margin: 0 0 var(--spacing-6) 0;
+    margin: 0 0 var(--spacing-4) 0;
     line-height: 1.2;
     letter-spacing: -0.025em;
   }
-  
-  .post-meta {
-    display: flex;
-    flex-direction: column;
-    gap: var(--spacing-4);
-  }
-  
+
   .post-date {
     color: var(--color-muted);
     font-size: var(--font-size-base);
     font-weight: 500;
+    display: block;
   }
-  
-  .post-tags {
-    display: flex;
-    gap: var(--spacing-3);
-    flex-wrap: wrap;
-  }
-  
-  .post-tag {
-    background: var(--color-surface);
-    color: var(--color-muted);
-    padding: 0.375rem var(--spacing-3);
-    border-radius: 6px;
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    border: 1px solid var(--color-border);
-    white-space: nowrap;
-  }
-  
+
   .post-content {
     line-height: 1.75;
     color: var(--color-text);

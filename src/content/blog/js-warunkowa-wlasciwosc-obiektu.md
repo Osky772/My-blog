@@ -2,7 +2,6 @@
 title: Jak warunkowo dodać właściwość do obiektu?
 description: Jak możemy warunkowo dodać jakąś właściwość do obiektu? Można to zrobić na kilka sposobów.
 pubDate: 2021-10-12
-tags: []
 ---
 
 

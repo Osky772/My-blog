@@ -2,7 +2,6 @@
 title: Po co nam Planowanie Sprintu?
 description: Każdy Sprint zaczyna się od Planowania Sprintu (ang. *Sprint Planning*). Jest to spotkanie, podczas którego Zespół Scrumowy ustala, jakie wymagania wdroży w cią
 pubDate: 2021-08-19
-tags: []
 ---
 
 

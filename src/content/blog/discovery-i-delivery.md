@@ -2,7 +2,6 @@
 title: Discovery i Delivery - perspektywa, której brakuje inżynierom
 description: Jak wejście w tematy produktowe zmieniło mój sposób prowadzenia zespołu
 pubDate: 2025-12-31
-tags: [product, development, discovery, leadership]
 ---
 
 ## Czego nie uczą na kursach programowania

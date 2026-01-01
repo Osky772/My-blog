@@ -2,7 +2,6 @@
 title: Jak zostać programistą front-end?
 description: "W poprzednim wpisie opowiedziałem moją historię związaną z wyborem zawodu programisty. Teraz chcę Ci przedstawić, jak wygląda droga edukacji do zostania front-e"
 pubDate: 2020-07-16
-tags: []
 ---
 
 

@@ -2,7 +2,6 @@
 title: Git w Visual Studio Code
 description: W tym artykule pokażę, jak można ułatwić sobie codzienną pracę z Git'em nie wychodząc z Visual Studio Code.
 pubDate: 2020-09-13
-tags: ["Git"]
 ---
 W tym artykule pokażę, jak można ułatwić sobie codzienną pracę z Git'em nie wychodząc z Visual Studio Code.
 

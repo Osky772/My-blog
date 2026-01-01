@@ -2,7 +2,6 @@
 title: Algorytm sortowania bąbelkowego
 description: Zasada działania algorytmu sortowania bąbelkowego opiera się na porównywaniu dwóch sąsiadujących elementów i zamianie ich kolejności, gdy nie spełniają kryteriu
 pubDate: 2021-10-24
-tags: ["Algorytmika"]
 ---
 
 

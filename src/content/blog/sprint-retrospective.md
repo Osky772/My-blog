@@ -2,7 +2,6 @@
 title: Co to jest Retrospekcja Sprintu?
 description: Retrospekcja Sprintu (ang. *Sprint Retrospective*) to **najważniejsze wydarzenie w Scrumie**, podczas którego wszyscy członkowie Zespołu analizują swoją pracę w
 pubDate: 2021-08-18
-tags: []
 ---
 
 

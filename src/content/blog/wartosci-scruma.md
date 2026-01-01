@@ -2,7 +2,6 @@
 title: Wartości w Scrumie
 description: Krwią scruma są wartości, o których już coraz rzadziej się rozmawia, bo częściej tymi wartościami się żyje. Problem jest wtedy, gdy nie żyje się tymi wartościam
 pubDate: 2021-08-03
-tags: []
 ---
 
 

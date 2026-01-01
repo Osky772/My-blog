@@ -2,7 +2,6 @@
 title: Czym jest Scrum?
 description: Załóżmy, że wraz z innymi osobami chcesz stworzyć jakiś produkt. Podczas jego planowania i wytwarzania pojawi się masa pytań i problemów, z którymi trzeba się z
 pubDate: 2021-08-01
-tags: []
 ---
 
 

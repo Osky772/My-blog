@@ -2,7 +2,6 @@
 title: Typescript - literal inference
 description: W Typescript możemy trafić na błąd typu "Argument of type X is not assignable to parameter of type Y". Co to oznacza i jak to naprawić?
 pubDate: 2021-10-07
-tags: []
 ---
 
 

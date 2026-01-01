@@ -2,7 +2,6 @@
 title: Łatwa i szybka konfiguracja z Github poprzez SSH
 description: "W tym wpisie opiszę jak w łatwy sposób połączyć się z Github-em za pomocą SSH. Dzięki takiemu połączeniu możemy rozpocząć pracę ze zdalnym repozytorium, czyli z"
 pubDate: 2021-07-28
-tags: ["Git"]
 ---
 
 

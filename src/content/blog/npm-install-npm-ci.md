@@ -2,7 +2,6 @@
 title: Różnice pomiędzy npm install a npm ci
 description: W poprzednim wpisie opisałem komendę `npm install`. Teraz opiszę co robi komenda `npm ci` oraz jakie są różnice między nimi.
 pubDate: 2021-07-31
-tags: []
 ---
 
 

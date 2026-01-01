@@ -2,7 +2,6 @@
 title: Nadpisanie poprzedniego commita
 description: Niejednokrotnie przydaje się nadpisanie poprzedniego commita. Poprzez nadpisanie mam na myśli na przykład zmianę commit message, edycję kodu lub dodanie jakichś
 pubDate: 2021-10-04
-tags: ["Git"]
 ---
 
 

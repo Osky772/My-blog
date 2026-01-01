@@ -2,7 +2,6 @@
 title: Git - podstawowa praca w lokalnym repozytorium
 description: Cześć, witam Cię w kolejnym wpisie 🤚. W tym artykule przeprowadzę Cię przez początki pracy z Git'em.
 pubDate: 2020-08-13
-tags: []
 ---
 
 

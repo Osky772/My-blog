@@ -2,7 +2,6 @@
 title: Git branching - równoległa praca w repozytorium
 description: Cześć, witaj w kolejnym artykule poświęconym podstawom Git'a 🤚😀. W tym odcinku przyjrzymy się tematowi branchów. Jeśli chcesz nauczyć się korzystać z narzędzi
 pubDate: 2020-08-27
-tags: []
 ---
 
 

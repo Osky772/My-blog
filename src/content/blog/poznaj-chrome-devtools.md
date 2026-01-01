@@ -2,7 +2,6 @@
 title: Poznaj Chrome DevTools
 description: Cześć! W tym wpisie chcę Ci pokazać narzędzia deweloperskie Chrome Devtools 🛠. Przedstawię najważniejsze cechy tych narzędzi i opiszę wybrane, najczęściej używ
 pubDate: 2020-07-30
-tags: []
 ---
 
 

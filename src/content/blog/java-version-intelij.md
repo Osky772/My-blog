@@ -1,8 +1,7 @@
 ---
 title: Wybór wersji Javy w Intelij Idea
-description: Jak zmienić wersję Javy w Intelij Idea?
+description: Jak zmienić wersję Jawy w Intelij Idea?
 pubDate: 2021-09-07
-tags: []
 ---
 
 

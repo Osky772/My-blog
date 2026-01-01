@@ -2,7 +2,6 @@
 title: Instalacja Javy na macOS
 description: Zainstalujemy Java Development Kit (JDK) na systemie macOS wykorzystując SDKMAN (The Software Development Kit Manager). Jak dla mnie, jest to najprostszy sposób
 pubDate: 2021-09-06
-tags: []
 ---
 
 

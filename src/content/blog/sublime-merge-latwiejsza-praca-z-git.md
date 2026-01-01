@@ -2,7 +2,6 @@
 title: Sublime Merge - łatwiejsza praca z Git
 description: W tym wpisie opowiem czym jest Git GUI, jakie zalety są korzystania z programu Sublime Merge i o funkcjonalnościach z których korzystam.
 pubDate: 2020-10-08
-tags: ["Git"]
 ---
 
 

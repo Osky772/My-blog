@@ -2,7 +2,6 @@
 title: Trzy filary Scruma
 description: Na filarach scruma oparty jest cały proces scrumowy i pielęgnacja jego efektywnego funkcjonowania. Bez nich nie można dobrze poruszać się w scrumie i cały proce
 pubDate: 2021-08-02
-tags: []
 ---
 
 

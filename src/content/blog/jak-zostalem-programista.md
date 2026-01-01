@@ -2,7 +2,6 @@
 title: Jak zostałem programistą?
 description: Cześć, witaj na moim blogu! To jest mój pierwszy wpis na tym blogu... oraz w ogóle jest to mój pierwszy wpis, jaki pisze w życiu 😅. Opowiem, dlaczego w ogóle z
 pubDate: 2020-06-27
-tags: []
 ---
 
 

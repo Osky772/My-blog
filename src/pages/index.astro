@@ -30,17 +30,10 @@ const latestPosts = allPosts.sort((a, b) =>
             <h3>{post.data.title}</h3>
             <time>{post.data.pubDate.toLocaleDateString('pl-PL', {
               year: 'numeric',
-              month: 'long', 
+              month: 'long',
               day: 'numeric'
             })}</time>
             <p>{post.data.description}</p>
-            {post.data.tags && (
-              <div class="tags">
-                {post.data.tags.map((tag) => (
-                  <span class="tag">{tag}</span>
-                ))}
-              </div>
-            )}
           </a>
         </article>
       ))}
@@ -142,25 +135,7 @@ const latestPosts = allPosts.sort((a, b) =>
     margin: var(--spacing-4) 0;
     line-height: 1.6;
   }
-  
-  .tags {
-    display: flex;
-    gap: var(--spacing-3);
-    flex-wrap: wrap;
-    margin-top: var(--spacing-4);
-  }
-  
-  .tag {
-    background: var(--color-surface);
-    color: var(--color-muted);
-    padding: 0.375rem var(--spacing-3);
-    border-radius: 6px;
-    font-size: var(--font-size-xs);
-    font-weight: 500;
-    border: 1px solid var(--color-border);
-    white-space: nowrap;
-  }
-  
+
   @media (max-width: 640px) {
     .hero-title {
       font-size: var(--font-size-3xl);
