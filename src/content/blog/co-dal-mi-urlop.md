@@ -1,5 +1,5 @@
 ---
-title: Urlop i poukładanie w głowie
+title: "Co dał mi urlop: jasność i powrót ciekawości"
 description: Jak 6 tygodni urlopu pomogło mi zrozumieć, że chcę zostać w technologii jako Engineering Leader
 pubDate: 2026-01-02
 ---

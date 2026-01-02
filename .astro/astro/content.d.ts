@@ -146,182 +146,189 @@ declare module 'astro:content' {
   slug: "broken-link-checker";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "bubble-sorting.md": {
 	id: "bubble-sorting.md";
   slug: "bubble-sorting";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
+} & { render(): Render[".md"] };
+"co-dal-mi-urlop.md": {
+	id: "co-dal-mi-urlop.md";
+  slug: "co-dal-mi-urlop";
+  body: string;
+  collection: "blog";
+  data: any
 } & { render(): Render[".md"] };
 "czym-jest-scrum.md": {
 	id: "czym-jest-scrum.md";
   slug: "czym-jest-scrum";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "discovery-i-delivery.md": {
 	id: "discovery-i-delivery.md";
   slug: "discovery-i-delivery";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "filary-scruma.md": {
 	id: "filary-scruma.md";
   slug: "filary-scruma";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "git-branching-rownolegla-praca-w-repozytorium.md": {
 	id: "git-branching-rownolegla-praca-w-repozytorium.md";
   slug: "git-branching-rownolegla-praca-w-repozytorium";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "git-commit-amend.md": {
 	id: "git-commit-amend.md";
   slug: "git-commit-amend";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "git-podstawowa-praca-w-lokalnym-repozytorium.md": {
 	id: "git-podstawowa-praca-w-lokalnym-repozytorium.md";
   slug: "git-podstawowa-praca-w-lokalnym-repozytorium";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "instalowanie-zaleznosci-npm-install.md": {
 	id: "instalowanie-zaleznosci-npm-install.md";
   slug: "instalowanie-zaleznosci-npm-install";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "jak-zostac-programista-frontend.md": {
 	id: "jak-zostac-programista-frontend.md";
   slug: "jak-zostac-programista-frontend";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "jak-zostalem-programista.md": {
 	id: "jak-zostalem-programista.md";
   slug: "jak-zostalem-programista";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "java-instalacja.md": {
 	id: "java-instalacja.md";
   slug: "java-instalacja";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "java-version-intelij.md": {
 	id: "java-version-intelij.md";
   slug: "java-version-intelij";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "js-warunkowa-wlasciwosc-obiektu.md": {
 	id: "js-warunkowa-wlasciwosc-obiektu.md";
   slug: "js-warunkowa-wlasciwosc-obiektu";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "konfiguracja-github-z-ssh.md": {
 	id: "konfiguracja-github-z-ssh.md";
   slug: "konfiguracja-github-z-ssh";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "npm-install-npm-ci.md": {
 	id: "npm-install-npm-ci.md";
   slug: "npm-install-npm-ci";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "planowanie-sprintu.md": {
 	id: "planowanie-sprintu.md";
   slug: "planowanie-sprintu";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "poznaj-chrome-devtools.md": {
 	id: "poznaj-chrome-devtools.md";
   slug: "poznaj-chrome-devtools";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "poznaj-zespol-scrumowy.md": {
 	id: "poznaj-zespol-scrumowy.md";
   slug: "poznaj-zespol-scrumowy";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "przeglad-sprintu.md": {
 	id: "przeglad-sprintu.md";
   slug: "przeglad-sprintu";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "refinement.md": {
 	id: "refinement.md";
   slug: "refinement";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "sprint-retrospective.md": {
 	id: "sprint-retrospective.md";
   slug: "sprint-retrospective";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "sublime-merge-latwiejsza-praca-z-git.md": {
 	id: "sublime-merge-latwiejsza-praca-z-git.md";
   slug: "sublime-merge-latwiejsza-praca-z-git";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "ts-literal-inference.md": {
 	id: "ts-literal-inference.md";
   slug: "ts-literal-inference";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "visual-studio-code-git.md": {
 	id: "visual-studio-code-git.md";
   slug: "visual-studio-code-git";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 "wartosci-scruma.md": {
 	id: "wartosci-scruma.md";
   slug: "wartosci-scruma";
   body: string;
   collection: "blog";
-  data: InferEntrySchema<"blog">
+  data: any
 } & { render(): Render[".md"] };
 };
 
@@ -333,5 +340,5 @@ declare module 'astro:content' {
 
 	type AnyEntryMap = ContentEntryMap & DataEntryMap;
 
-	export type ContentConfig = typeof import("../../src/content/config.js");
+	export type ContentConfig = never;
 }
