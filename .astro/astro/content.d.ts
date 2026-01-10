@@ -330,6 +330,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"zespol-potrzebuje-kapitana.md": {
+	id: "zespol-potrzebuje-kapitana.md";
+  slug: "zespol-potrzebuje-kapitana";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 };
 
 	};
