@@ -253,6 +253,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"koordynacja-bez-mikromanagementu.md": {
+	id: "koordynacja-bez-mikromanagementu.md";
+  slug: "koordynacja-bez-mikromanagementu";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "npm-install-npm-ci.md": {
 	id: "npm-install-npm-ci.md";
   slug: "npm-install-npm-ci";
