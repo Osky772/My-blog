@@ -16,9 +16,9 @@ To potwierdza coś, o czym pisałem wcześniej: ktoś musi koordynować. Ale nie
 
 Próbowałem różnych podejść do prowadzenia projektów:
 
-**Skrajność pierwsza:** Opisywanie wszystkiego - jak ma działać UI, jakie jest oczekiwane zachowanie aplikacji w każdym stanie, każdy szczegół.
+Skrajność pierwsza: Opisywanie wszystkiego - jak ma działać UI, jakie jest oczekiwane zachowanie aplikacji w każdym stanie, każdy szczegół.
 
-**Skrajność druga:** YOLO mode - w sumie w ogóle nie angażowałem się w zarządzanie projektem, oddawałem to całkowicie zespołowi.
+Skrajność druga: YOLO mode - w sumie w ogóle nie angażowałem się w zarządzanie projektem, oddawałem to całkowicie zespołowi.
 
 Żadne z tych skrajności nie działa. Feedback z piątkowego retro był jasny: potrzebna jest koordynacja. Widziałem to samo na retro zespołu, które odbyło się podczas mojego urlopu - zespół zgłaszał identyczne problemy.
 
@@ -30,7 +30,7 @@ To intensywna praca. Jest ogromne napięcie między:
 - Chęcią szybkiego startu ("przecież wiemy co robić!")
 - Rzeczywistością - im więcej rozmawiamy, tym więcej niejasności wychodzi na jaw
 
-Ustalenie najważniejszych funkcjonalności i flow UX **trwa**. Trwa, bo trzeba zebrać feedback od wielu osób w firmie. Trwa, bo każda rozmowa odkrywa kolejne pytania bez odpowiedzi. Trwa, bo projektowanie najlepszego (na dany moment) rozwiązania wymaga czasu.
+Ustalenie najważniejszych funkcjonalności i flow UX trwa. Trwa, bo trzeba zebrać feedback od wielu osób w firmie. Trwa, bo każda rozmowa odkrywa kolejne pytania bez odpowiedzi. Trwa, bo projektowanie najlepszego (na dany moment) rozwiązania wymaga czasu.
 
 ## Moja rola: zarządzanie napięciem
 
@@ -46,10 +46,10 @@ Moderuję dyskusje. Zbieram feedback. Podejmuję trudne decyzje o tym, co odpuś
 
 To pytanie zadaję najczęściej. Oto jak działam:
 
-- **Nie umiemy odpowiedzieć?** → Pomijamy funkcjonalność
-- **Umiemy odpowiedzieć?** → Sprawdzamy, czy jest na tyle istotna, żeby ją robić
-- **Coś jest istotne, ale nie wiemy jak to rozwiązać?** → Mamy "krążący meteoryt" przez jakiś czas (tak też bywa)
-- **Świadoma rezygnacja** → Czasem pomijamy coś celowo, żeby szybciej wypchnąć projekt do klientów, zamiast trzymać go tygodniami
+- Nie umiemy odpowiedzieć? → Pomijamy funkcjonalność
+- Umiemy odpowiedzieć? → Sprawdzamy, czy jest na tyle istotna, żeby ją robić
+- Coś jest istotne, ale nie wiemy jak to rozwiązać? → Mamy "krążący meteoryt" przez jakiś czas (tak też bywa)
+- Świadoma rezygnacja → Czasem pomijamy coś celowo, żeby szybciej wypchnąć projekt do klientów, zamiast trzymać go tygodniami
 
 Scope maksymalnie mały, ale na tyle duży, by projekt był użyteczny i dobry. Wolę wypuszczać często niż trzymać długo.
 
@@ -57,10 +57,10 @@ Scope maksymalnie mały, ale na tyle duży, by projekt był użyteczny i dobry. 
 
 Kiedy dobrze zrobię swoją robotę na początku, zespół może działać autonomicznie przez kolejne tygodnie. Nie potrzebują ode mnie mikromanagementu. Wystarczy:
 
-- **High level cel** - dokąd zmierzamy i dlaczego
-- **Ustalone co robimy i czego NIE robimy** - jasne granice scope'u
-- **Główne funkcjonalności w formie story** - nie każdy piksel, ale kierunek
-- **Ważne szczegóły** - rzeczy, na które trzeba zwrócić uwagę przy danym temacie
+- High level cel - dokąd zmierzamy i dlaczego
+- Ustalone co robimy i czego NIE robimy - jasne granice scope'u
+- Główne funkcjonalności w formie story - nie każdy piksel, ale kierunek
+- Ważne szczegóły - rzeczy, na które trzeba zwrócić uwagę przy danym temacie
 
 Potem tylko wyjaśnianie na bieżąco i ewentualna zmiana scope'u. Ale wtedy **przychodzi z konkretami**: mamy ustalony scope, pojawia się propozycja zmiany - możemy rozmawiać o wpływie na termin, wycenie, priorytetach.
 
@@ -70,19 +70,19 @@ Nie ma chaosu w stylu "a może jednak zróbmy to inaczej" po raz piąty w tym ty
 
 Zamiast tonąć w szczegółach Jiry, mogę skupić się na tym, co naprawdę przesuwa projekt do przodu:
 
-- **Mentoring** - rozwijanie ludzi w zespole
-- **Planowanie** - myślenie o kolejnych krokach
-- **Architektura** - kluczowe decyzje techniczne
-- **Code review** - jakość kodu i transfer wiedzy
-- **Kodowanie** - praktyczna praca przy trudnych kawałkach
+- Mentoring - rozwijanie ludzi w zespole
+- Planowanie - myślenie o kolejnych krokach
+- Architektura - kluczowe decyzje techniczne
+- Code review - jakość kodu i transfer wiedzy
+- Kodowanie - praktyczna praca przy trudnych kawałkach
 
 ## Co jest naprawdę ważne
 
 Zbudowanie clarity to dopiero początek. Równie ważne jest:
 
-- **Określenie metryk sukcesu projektu** - jak zmierzymy, że osiągnęliśmy cel?
-- **Ustawienie analityki produktowej i technicznej** - co będziemy śledzić?
-- **Mierzenie tego, co faktycznie ma znaczenie** - nie vanity metrics, ale prawdziwa wartość
+- Określenie metryk sukcesu projektu - jak zmierzymy, że osiągnęliśmy cel?
+- Ustawienie analityki produktowej i technicznej - co będziemy śledzić?
+- Mierzenie tego, co faktycznie ma znaczenie - nie vanity metrics, ale prawdziwa wartość
 
 ## Feedback który się powtarza
 
