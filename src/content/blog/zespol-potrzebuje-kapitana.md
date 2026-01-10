@@ -4,6 +4,9 @@ description: Zespόł potrzebuje kapitana. Moja lekcja z ostatnich miesięcy
 pubDate: 2025-10-06
 ---
 
+
+![Kartki po retro](/images/zespol-potrzebuje-kapitana/zaglowiec_16x9.jpg)
+
 Chcę podzielić się swoim lesson learned z ostatniego, częściowo nieświadomego eksperymentu, jaki przeprowadziłem w swoim zespole.
 
 Mam w zespole 5 inżynierów: dwóch frontend developerów i trzech backend developerów.
