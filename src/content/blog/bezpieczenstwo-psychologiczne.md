@@ -5,20 +5,18 @@ pubDate: 2026-01-13
 ---
 
 
-Piszę ten wpis, bo naprawdę zależy mi na budowaniu kultury bezpieczeństwa psychologicznego w moim zespole i w całej firmie. I wiem, że **nie da się tego robić tylko mówiąc o teorii** - trzeba też pokazać, jak łatwo to bezpieczeństwo zaburzyć i co można z tym zrobić. Dlatego dzielę się tutaj swoimi porażkami, ale też tym, co robię dobrze.
+Piszę ten wpis, bo naprawdę zależy mi na budowaniu kultury bezpieczeństwa psychologicznego w moim zespole i w całej firmie. I wiem, że nie da się tego robić tylko mówiąc o teorii - trzeba też pokazać, jak łatwo to bezpieczeństwo zaburzyć i co można z tym zrobić. Dlatego dzielę się tutaj swoimi porażkami, ale też tym, co robię dobrze.
 
 ## Jak łatwo zaburzyć bezpieczeństwo psychologiczne
 
-Ostatnio w gronie liderów padło zdanie, które jest świetnym przykładem tego, jak nieświadomie niszczymy bezpieczeństwo psychologiczne: **"To będzie trochę rywalizacja, jaki zespół będzie sobie lepiej radził"** – w kontekście naszych eksperymentów z AI. Nikt wtedy nie zareagował. Potem to samo zdanie padło na spotkaniu mojego zespołu. I tu reakcja była natychmiastowa. Zespół zaczął krytykować takie podejście. Nikt nie chce pracować w kulturze zapierdolu.
+Ostatnio w gronie liderów padło zdanie, które jest świetnym przykładem tego, jak nieświadomie niszczymy bezpieczeństwo psychologiczne: "To będzie trochę rywalizacja, jaki zespół będzie sobie lepiej radził" – w kontekście naszych eksperymentów z AI. Nikt wtedy nie zareagował. Potem to samo zdanie padło na spotkaniu mojego zespołu. I tu reakcja była natychmiastowa. Zespół zaczął krytykować takie podejście. Nikt nie chce pracować w kulturze zapierdolu.
 
-Zgadzam się z nimi.
+I zgadzam się z nimi. Jasne, takie rzeczy można sobie mówić w zamkniętym gronie liderów i wiadomo, że różne rozmowy się toczą - oceniamy przecież performance zespołów i ludzi. Ale takie komentarze nie powinny wychodzić na forum. Każdy jest oceniany, to naturalne, ale nikt nie czeka aż komuś noga się powinie. Problem polega na tym, że takie sformułowanie na spotkaniu zespołu brzmi jak groźba, a nie jak motywacja.
 
 ## Czemu w ogóle się tym przejmować?
 Można by pomyśleć: najważniejsze to outcome i wyniki, reszta jest drugorzędna. Problem w tym, że żeby mieć te wyniki, potrzebujemy fundamentu – solidnych podstaw do ich osiągania. A jedną z najważniejszych rzeczy wpływających na jakość funkcjonowania zespołu jest właśnie bezpieczeństwo psychologiczne.
 
 **[Badania pokazują to wprost](https://rdel.substack.com/p/rdel-103-how-does-psychological-safety): bezpieczeństwo psychologiczne poprawia wydajność zespołu i wyniki biznesowe.**
-
-![photo](/images/fundations.png)
 
 ## Czym jest bezpieczeństwo psychologiczne?
 
@@ -32,12 +30,6 @@ Wywołało to we mnie trudne emocje. Oni wypracowali inne podejście, uprościli
 Nikt z mojego zespołu nie zareagował tak emocjonalnie jak ja. To mnie zaskoczyło i jeszcze bardziej zdenerwowało, bo chciałem mieć zespół, który czuje ownership za to, co robi. I wtedy powiedziałem coś, czego żałuję: **"Oni byli w stanie zrobić to w parę dni, a my w parę miesięcy."**
 
 Powiedziałem to, bo chciałem ich poruszyć, żeby poczuli odpowiedzialność. **Źle to zrobiłem.** W dodatku w tym samym czasie mieliśmy w firmie gorące rozmowy na temat naszej wartości "high-speed" i ktoś też wspomniał inny zespół, który dowiózł kilka ficzerów bardzo szybko. Zbierałem ten smród przez parę tygodni.
-
-## Jeden zespół, nie dwie drużyny
-
-Traktuję naszą firmę i wszystkie zespoły jako jedną drużynę. Nie dwie drużyny, które walczą przeciwko sobie. Działamy na korzyść naszej organizacji. Nie rywalizujemy, który zespół będzie lepszy. Naszym celem jest wspólnie dowieźć wyniki i wspierać uczenie się od siebie nawzajem.
-
-Dlatego pomysł "rywalizacji zespołów" budzi mój sprzeciw. To nie o to chodzi. **To nie tworzy bezpieczeństwa psychologicznego – tworzy kulturę strachu i konkurencji tam, gdzie powinna być współpraca.**
 
 ## Co robię, aby wspierać bezpieczeństwo psychologiczne?
 
@@ -53,10 +45,7 @@ Chyba każdy w zespole zadaje to pytanie, gdy dostaje ode mnie pozytywny feedbac
 
 ## Podsumowanie
 
-**Bezpieczeństwo psychologiczne to nie fanaberia ani miękkie podejście do zarządzania.** To fundament, który pozwala zespołom osiągać wyniki biznesowe. Bez niego nie ma:
-- Szczerych rozmów
-- Otwartości na błędy
-- Uczenia się
+Bezpieczeństwo psychologiczne to nie fanaberia ani miękkie podejście do zarządzania. To fundament, który pozwala zespołom osiągać wyniki biznesowe. Bez niego nie ma szczerych rozmów, otwartości na błędy ani uczenia się.
 
 A bez tego wszystkiego nie ma też trwałych, dobrych wyników.
 
