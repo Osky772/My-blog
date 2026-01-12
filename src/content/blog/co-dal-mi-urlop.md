@@ -14,7 +14,7 @@ Zawodowy? Tak. Poukładało mi się sporo rzeczy. Między innymi wiem co chcę r
 
 Przed urlopem postanowiłem że chciałbym aby był to czas jednoczący. Jednoczący nas, naszą rodzinę, moją relację z żoną i dziećmi.
 
-Zastanowiłem się co konkretnie mogę zrobić aby uczynić ten czas jednoczący? ZERO pracy. Zero myślenia o pracy. Totalnie to zostawić. Najwyżej świat się zawali. Najwyżej nie będę miał do czego wracać. Może okażę się niepotrzebny (cóż, takie lęki też mam w głowie).
+Zastanowiłem się co konkretnie mogę zrobić aby uczynić ten czas jednoczący? **ZERO pracy. Zero myślenia o pracy. Totalnie to zostawić.** Najwyżej świat się zawali. Najwyżej nie będę miał do czego wracać. Może okażę się niepotrzebny (cóż, takie lęki też mam w głowie).
 
 I to się udało. To był bardzo dobry czas dla rodziny i dla mnie.
 
@@ -26,13 +26,13 @@ Proces Discovery to z natury dość chaotyczny proces. Tak napisała Teresa Torr
 
 Ja osobiście czerpię znacznie więcej satysfakcji z tego że uda mi się coś realnego zrobić niż z decydowania o tym, w którym kierunku produktowym idziemy. Oczywiście interesuje mnie dlaczego coś robimy - to podstawa. Ale nie jara mnie bycie aktywnym uczestnikiem wyboru tego kierunku. Czuję ekscytację i ciekawość o to JAK to zrobić.
 
-Technologia. AI agenty. Architektura. Skalowanie. Itd. To mnie po prostu jara.
+**Technologia. AI agenty. Architektura. Skalowanie.** Itd. To mnie po prostu jara.
 
 Bo do tej pory każdy branżowy artykuł który przeczytałem w internecie - głównie o tematach produktowych - zastanawiałem się jak mogę wykorzystać coś z tego co przeczytałem w obecnej pracy, obecnych obowiązkach. I przez to nieraz czytałem coś z pewnym ciężarem. Nie było w tym luzu, naturalnej ciekawości.
 
 A przecież jak wchodziłem w tą branżę to mnie przyciągała ciekawość. Ogromna ciekawość. Wszystko mnie fascynowało. Programowanie. W ogóle świat IT. I ten zachwyt naprawdę był dla mnie motorem napędowym.
 
-I właśnie w ostatnich miesiącach straciłem ten zachwyt. Obowiązki zaczęły mnie przytłaczać. To co miało dawać radość przestało. Jasne że nie chodzi o samą radość ale brak tej ciekawości, brak zajawki.
+I właśnie w ostatnich miesiącach **straciłem ten zachwyt**. Obowiązki zaczęły mnie przytłaczać. To co miało dawać radość przestało. Jasne że nie chodzi o samą radość ale brak tej ciekawości, brak zajawki.
 
 ## Dwie nogi
 
@@ -40,7 +40,7 @@ Technologia to jedna noga. Produktowe myślenie to druga. Obie są potrzebne że
 
 Początkowo tematy produktowe były dla mnie meeega ciekawe. Ale jakiś na koniec dnia to nie jest obszar, kierunek w którym chcę zmierzać pełną parą.
 
-Discovery, czy wgl produktowe myślenie to jakby druga noga. No jest potrzebna jeśli chcemy chodzić. O tym wspomniałem w ostatnim wpisie. I uważam że to jest wiedza niezbędna. Ale jako mój główny nurt to wybieram kierunek techniczny.
+Discovery, czy wgl produktowe myślenie to jakby druga noga. No jest potrzebna jeśli chcemy chodzić. O tym wspomniałem w ostatnim wpisie. I uważam że to jest wiedza niezbędna. Ale jako mój główny nurt to **wybieram kierunek techniczny**.
 
 I to też nie jest tylko twarde programowanie. Na wyższym poziomie seniority, tak po 3-4 latach programowania, jak to powiedział Bill Gates, nie urośniesz jakoś bardzo mocno w aspekcie technicznym. Przez te kilka lat człowiek nabiera takiej wprawy że nauka nowych technologii to norma i przychodzi już dużo łatwiej niż na początku.
 
@@ -72,7 +72,7 @@ Dalej mam swój zespół i z tego nie chcę rezygnować. Podoba mi się rola lid
 
 ## Co dał mi ten urlop?
 
-Jasność. I powrót ciekawości.
+**Jasność. I powrót ciekawości.**
 
 Ten urlop był bardzo wartościowy. Każdemu polecam dłuższy urlop - 2 tygodnie to w ogóle minimum, najlepiej 3. To jest po prostu potrzebne, aby być zdrowym i wrócić z czystą głową, lepiej poukładaną.
 
