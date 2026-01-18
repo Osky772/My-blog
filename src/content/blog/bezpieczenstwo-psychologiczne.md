@@ -5,7 +5,7 @@ pubDate: 2026-01-13
 ---
 
 
-Piszę ten wpis, bo naprawdę zależy mi na budowaniu kultury bezpieczeństwa psychologicznego w moim zespole i w całej firmie. I wiem, że nie da się tego robić tylko mówiąc o teorii - trzeba też pokazać, jak łatwo to bezpieczeństwo zaburzyć i co można z tym zrobić. Dlatego dzielę się tutaj swoimi porażkami, ale też tym, co robię dobrze.
+Piszę ten wpis, bo zależy mi na budowaniu kultury bezpieczeństwa psychologicznego w moim zespole i w całej firmie. I wiem, że nie da się tego robić tylko mówiąc o teorii - trzeba też pokazać, jak łatwo to bezpieczeństwo zaburzyć i co można z tym zrobić. Dlatego dzielę się tutaj swoimi porażkami, ale też tym, co robię dobrze.
 
 ## Jak łatwo zaburzyć bezpieczeństwo psychologiczne
 
@@ -23,11 +23,14 @@ Można by pomyśleć: najważniejsze to outcome i wyniki, reszta jest drugorzęd
 ## Mój błąd, który pamiętam do dziś
 
 Ja sam popełniłem taki błąd i wciąż o nim pamiętam. Pracowaliśmy nad projektem przez trzy miesiące. Długo, bo cały czas dokładaliśmy scope na poziomie leadershipu i próbowaliśmy ustalić wspólny UI jako szablon dla reszty aplikacji. Część aplikacji była specyficzna, musieliśmy uważać, żeby niczego nie popsuć. Można było podjąć lepsze decyzje co do scope, ale to temat na inny raz.
-Pewnego dnia, niewiele po naszym release, drugi zespół przepisywał część aplikacji i "przy okazji" przepisał też to, co my robiliśmy. Zrobili to w parę dni. Wycięli sporo rzeczy, które wprowadziliśmy świadomie, ale po prostu zrobili to i już.
-Wywołało to we mnie trudne emocje. Oni wypracowali inne podejście, uprościli znaczną część aplikacji i ujednolicili ją w inny sposób. I to było okej – obiektywnie była to dobra decyzja. Ale mnie zdenerwowało, że ktoś "popsuł moje klocki", zaorał to, co robiliśmy przez kilkanaście tygodni.
+Pewnego dnia, niewiele po naszym release, drugi zespół przepisywał część aplikacji i "przy okazji" przepisał też to, co my robiliśmy. Zrobili to w parę dni! Rozumiesz?? W parę dni! Coś co my robiliśmy tygodniami. Wycięli przy okaji sporo innych rzeczy, które my wprowadziliśmy świadomie, ale po prostu zrobili to i już.
+
+Wywołało to we mnie trudne emocje. Oni wypracowali inne podejście, uprościli znaczną część aplikacji i ujednolicili ją w inny sposób. I to było okej – obiektywnie była to dobra decyzja. Ale mnie zdenerwowało to, że ktoś "popsuł moje klocki". Zaorali to, co robiliśmy przez kilkanaście tygodni!
 Nikt z mojego zespołu nie zareagował tak emocjonalnie jak ja. To mnie zaskoczyło i jeszcze bardziej zdenerwowało, bo chciałem mieć zespół, który czuje ownership za to, co robi. I wtedy powiedziałem coś, czego żałuję: **"Oni byli w stanie zrobić to w parę dni, a my w parę miesięcy."**
 
-Powiedziałem to, bo chciałem ich poruszyć, żeby poczuli odpowiedzialność. **Źle to zrobiłem.** W dodatku w tym samym czasie mieliśmy w firmie gorące rozmowy na temat naszej wartości "high-speed" i ktoś też wspomniał inny zespół, który dowiózł kilka ficzerów bardzo szybko. Zbierałem ten smród przez parę tygodni.
+Powiedziałem to, bo chciałem ich poruszyć, żeby poczuli odpowiedzialność. **Źle to zrobiłem.** W dodatku w tym samym czasie mieliśmy w firmie gorące rozmowy na temat naszej wartości "high-speed" i ktoś też wspomniał inny zespół, który dowiózł kilka ficzerów bardzo szybko. 
+
+Zbierałem ten smród przez parę tygodni.
 
 ## Co robię, aby wspierać bezpieczeństwo psychologiczne?
 
