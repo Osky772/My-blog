@@ -36,13 +36,13 @@ Zbierałem ten smród przez parę tygodni.
 
 Na naszym ostatnim retro kolega z zespołu dał kartkę z taką obserwacją: **"Mam wrażenie, że w komunikacji kładziemy nacisk na szybkość, a nie efektywność. Pierwsze wynika z drugiego, a drugie niekoniecznie będzie efektem pierwszego."**
 
-To zdanie trafiło mi jak pięść. Bo to jest dokładnie to, co słyszymy wszyscy – naciskamy na szybkość, a zapominamy o efektywności.
+To zdanie zapadlo mi w pamięć. Bo to jest dokładnie to, co słyszymy wszyscy – naciskamy na szybkość, a zapominamy o efektywności.
 
 Pomyśl o muzyku, któremu mówisz: "Graj szybciej, jak Tommy Emmanuel". Po co? Jeśli nie będzie grać *efektywnie*, będzie grać szybko i źle. Tommy Emmanuel nie jest szybki dlatego, że ktoś go nakłaniał do szybkości. Jest szybki dlatego, że znalazł sposób na granie *efektywnie* – każdy palec na miejscu, każdy ruch ma sens. Szybkość to naturalny wynik tego, jak dobrze opanował technikę.
 
 To samo dotyczy kodowania, projektowania czy pracy w zespole. **Szybkość przychodzi z efektywności**, a nie odwrotnie. Nie mogę powiedzieć developerom "bądźcie szybsi", jeśli nie pomogę im rozumieć, jak pracować *lepiej*. Jak się organizować, jak podejmować lepsze decyzje, jak unikać zbędnych prac.
 
-Gdy naciskamy na szybkość bez efektywności, ludzie czują się pędzeni. Robią szybko, ale nie koniecznie dobrze. A wtedy dochodzimy do miejsca, w którym uczestnicy retro mówią o "rywalizacji" zamiast wspólnej pracy. To jest ostrzeżenie, że coś w naszej komunikacji poszło nie tak.
+Gdy naciskamy na szybkość bez efektywności, ludzie czują się popędzani. Robią szybko, ale nie koniecznie dobrze. A wtedy dochodzimy do miejsca, w którym uczestnicy retro mówią o "rywalizacji" zamiast wspólnej pracy. To jest ostrzeżenie, że coś w naszej komunikacji poszło nie tak.
 
 ## Co robię, aby wspierać bezpieczeństwo psychologiczne?
 
