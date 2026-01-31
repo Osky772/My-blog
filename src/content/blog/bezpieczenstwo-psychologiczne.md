@@ -1,7 +1,7 @@
 ---
 title: 'Bezpieczeństwo psychologiczne - fundament wyników biznesowych'
 description: 'Jak nieprzemyślanym zdaniem możemy zniszczyć bezpieczeństwo psychologiczne w zespole - o błędach liderów i praktykach budowania kultury zaufania'
-pubDate: 2026-01-13
+pubDate: 2026-01-31
 ---
 
 
