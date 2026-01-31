@@ -141,6 +141,13 @@ declare module 'astro:content' {
 
 	type ContentEntryMap = {
 		"blog": {
+"bezpieczenstwo-psychologiczne.md": {
+	id: "bezpieczenstwo-psychologiczne.md";
+  slug: "bezpieczenstwo-psychologiczne";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "broken-link-checker.md": {
 	id: "broken-link-checker.md";
   slug: "broken-link-checker";
