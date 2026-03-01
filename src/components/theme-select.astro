@@ -1,0 +1,79 @@
+---
+/**
+ * Adjusted from https://github.com/withastro/starlight/blob/574e594bade56cac8425be6ee722af668ade18df/packages/starlight/components/ThemeSelect.astro
+ */
+
+import Icon from './icon.astro'
+---
+
+<atmb-theme-select>
+	<label class="relative flex items-center gap-2">
+		<span class="sr-only">Wybierz motyw</span>
+		<Icon name="laptop" class="icon label-icon" />
+		<select value="auto" autocomplete="off">
+			{
+				[
+					{ label: 'Ciemny', selected: false, value: 'dark' },
+					{ label: 'Jasny', selected: false, value: 'light' },
+					{ label: 'Auto', selected: true, value: 'auto' },
+				].map(({ value, selected, label }) => <option value={value} selected={selected} set:html={label} />)
+			}
+		</select>
+	</label>
+</atmb-theme-select>
+
+{/* Inlined to avoid FOUC. Uses global scope from `ThemeProvider.astro` */}
+<script is:inline>
+	AtmbThemeProvider.updatePickers()
+</script>
+
+<script>
+	type Theme = 'auto' | 'dark' | 'light'
+
+	const storageKey = 'atmb-theme'
+
+	function parseTheme(theme: unknown): Theme {
+		return theme === 'auto' || theme === 'dark' || theme === 'light' ? theme : 'auto'
+	}
+
+	function loadTheme(): Theme {
+		return parseTheme(typeof localStorage !== 'undefined' && localStorage.getItem(storageKey))
+	}
+
+	function storeTheme(theme: Theme): void {
+		if (typeof localStorage !== 'undefined') {
+			localStorage.setItem(storageKey, theme === 'light' || theme === 'dark' ? theme : '')
+		}
+	}
+
+	function getPreferredColorScheme(): Theme {
+		return matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark'
+	}
+
+	function onThemeChange(theme: Theme): void {
+		AtmbThemeProvider.updatePickers(theme)
+		document.documentElement.dataset.theme = theme === 'auto' ? getPreferredColorScheme() : theme
+		storeTheme(theme)
+	}
+
+	matchMedia(`(prefers-color-scheme: light)`).addEventListener('change', () => {
+		// prettier-ignore
+		if (loadTheme() === 'auto')
+onThemeChange('auto')
+	})
+
+	class AtmbThemeSelect extends HTMLElement {
+		constructor() {
+			super()
+			onThemeChange(loadTheme())
+			this.querySelector('select')?.addEventListener('change', (e) => {
+				if (e.currentTarget instanceof HTMLSelectElement) {
+					onThemeChange(parseTheme(e.currentTarget.value))
+				}
+			})
+		}
+	}
+	if (!customElements.get('atmb-theme-select')) {
+		customElements.define('atmb-theme-select', AtmbThemeSelect)
+	}
+</script>

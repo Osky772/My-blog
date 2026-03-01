@@ -1,187 +1,35 @@
 ---
-import Layout from '../../layouts/Layout.astro';
-import { getCollection } from 'astro:content';
+import Layout from '@layouts/layout.astro'
+import Seo from '@components/seo.astro'
+import { getCollection } from 'astro:content'
+import SkipNavContent from '@components/a11y/skip-nav-content.astro'
+import { defaultDateFormat, sortAsc } from '@utils'
+import Spacer from '@components/spacer.astro'
+import Link from '@components/link.astro'
 
-const allPosts = await getCollection('blog');
-const sortedPosts = allPosts.sort((a, b) => 
-  new Date(b.data.pubDate).getTime() - new Date(a.data.pubDate).getTime()
-);
+const posts = sortAsc(await getCollection('blog'))
 ---
 
-<Layout title="Blog - Oskar Kowalów">
-  <div class="blog-header">
-    <h1 class="blog-title">Wszystkie posty</h1>
-  </div>
-  
-  <div class="posts-container">
-    {sortedPosts.map((post, index) => (
-      <article class="post-item">
-        <a href={`/blog/${post.slug}/`} class="post-link">
-          <div class="post-content">
-            <h2 class="post-title">{post.data.title}</h2>
-            <time class="post-date">
-              {post.data.pubDate.toLocaleDateString('pl-PL', {
-                year: 'numeric',
-                month: 'long',
-                day: 'numeric'
-              })}
-            </time>
-            <p class="post-excerpt">{post.data.description}</p>
-          </div>
-          <div class="post-arrow">→</div>
-        </a>
-      </article>
-    ))}
-  </div>
+<Layout>
+	<Seo slot="seo" title="Blog" />
+	<SkipNavContent>
+		<h1 class="sr-only">Blog</h1>
+		<div class="flex gap-10 flex-col">
+			{
+				posts.map(({ data: post }) => (
+					<div>
+						<Link variant="highlight" class="font-medium" href={`/blog/${post.slug}/`}>
+							{post.title}
+						</Link>
+						<Spacer axis="vertical" size={2} />
+						<div class="text-faded">
+							{defaultDateFormat(post.date)} — {post.tags.join(', ')}
+						</div>
+						<Spacer axis="vertical" size={4} />
+						<div class="text-subtle text-md md:text-lg">{post.description}</div>
+					</div>
+				))
+			}
+		</div>
+	</SkipNavContent>
 </Layout>
-
-<style>
-  .blog-header {
-    margin-bottom: var(--spacing-16);
-    padding-bottom: var(--spacing-8);
-    border-bottom: 1px solid var(--color-border);
-  }
-  
-  .blog-title {
-    font-size: var(--font-size-3xl);
-    font-weight: 700;
-    color: var(--color-heading);
-    margin: 0 0 var(--spacing-4) 0;
-    letter-spacing: -0.025em;
-  }
-  
-  .blog-description {
-    font-size: var(--font-size-lg);
-    color: var(--color-muted);
-    margin: 0;
-    max-width: 50ch;
-  }
-  
-  .posts-container {
-    display: grid;
-    gap: var(--spacing-4);
-  }
-  
-  .post-item {
-    border: 1px solid var(--color-border);
-    border-radius: 12px;
-    transition: all 0.2s ease;
-    background: var(--color-background);
-    overflow: hidden;
-  }
-  
-  .post-item:hover {
-    border-color: var(--color-primary);
-    box-shadow: 0 4px 12px -1px rgba(0, 0, 0, 0.1);
-    transform: translateY(-1px);
-  }
-  
-  .post-link {
-    display: flex;
-    align-items: center;
-    padding: var(--spacing-6);
-    text-decoration: none;
-    color: inherit;
-    gap: var(--spacing-6);
-  }
-  
-  .post-content {
-    flex: 1;
-    min-width: 0;
-  }
-  
-  .post-title {
-    font-size: var(--font-size-xl);
-    font-weight: 600;
-    color: var(--color-heading);
-    margin: 0 0 var(--spacing-2) 0;
-    line-height: 1.3;
-    transition: color 0.2s ease;
-  }
-  
-  .post-item:hover .post-title {
-    color: var(--color-primary);
-  }
-  
-  .post-date {
-    color: var(--color-muted);
-    font-size: var(--font-size-sm);
-    font-weight: 500;
-    margin-bottom: var(--spacing-3);
-    display: block;
-  }
-  
-  .post-excerpt {
-    color: var(--color-text);
-    margin: 0;
-    line-height: 1.5;
-    display: -webkit-box;
-    -webkit-line-clamp: 2;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
-  }
-
-  .post-arrow {
-    color: var(--color-muted);
-    font-size: var(--font-size-lg);
-    font-weight: 300;
-    transition: all 0.2s ease;
-    flex-shrink: 0;
-  }
-  
-  .post-item:hover .post-arrow {
-    color: var(--color-primary);
-    transform: translateX(4px);
-  }
-  
-  /* Alternative layout for larger screens */
-  @media (min-width: 768px) {
-    .posts-container {
-      gap: var(--spacing-6);
-    }
-    
-    .post-link {
-      padding: var(--spacing-8);
-    }
-    
-    /* Optional: Grid layout for desktop */
-    /* Uncomment below for 2-column grid on larger screens */
-    /*
-    .posts-container {
-      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    }
-    
-    .post-link {
-      flex-direction: column;
-      align-items: flex-start;
-      text-align: left;
-    }
-    
-    .post-arrow {
-      align-self: flex-end;
-      margin-top: var(--spacing-4);
-    }
-    */
-  }
-  
-  @media (max-width: 640px) {
-    .blog-title {
-      font-size: var(--font-size-2xl);
-    }
-    
-    .blog-description {
-      font-size: var(--font-size-base);
-    }
-    
-    .post-link {
-      padding: var(--spacing-4);
-      flex-direction: column;
-      align-items: flex-start;
-      gap: var(--spacing-4);
-    }
-    
-    .post-arrow {
-      align-self: flex-end;
-    }
-  }
-</style>
