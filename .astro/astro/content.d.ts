@@ -295,6 +295,13 @@ declare module 'astro:content' {
   collection: "blog";
   data: InferEntrySchema<"blog">
 } & { render(): Render[".md"] };
+"product-builder-koniec-ery-czystego-implementatora.md": {
+	id: "product-builder-koniec-ery-czystego-implementatora.md";
+  slug: "product-builder-koniec-ery-czystego-implementatora";
+  body: string;
+  collection: "blog";
+  data: InferEntrySchema<"blog">
+} & { render(): Render[".md"] };
 "przeglad-sprintu.md": {
 	id: "przeglad-sprintu.md";
   slug: "przeglad-sprintu";
