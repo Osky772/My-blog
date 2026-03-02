@@ -42,8 +42,9 @@ const { Content } = await render(entry)
 			<h1 class="mb-0!" data-pagefind-meta="title">{post.title}</h1>
 			<Spacer axis="vertical" size={4} />
 			<div class="text-faded">
-				{defaultDateFormat(post.date)} — <TagLinks tags={post.tags} />
+				{defaultDateFormat(post.date)}
 			</div>
+			<span class="hidden"><TagLinks tags={post.tags} /></span>
 			<Spacer axis="vertical" size={12} />
 			<Content components={{ Aside }} />
 		</Prose>
