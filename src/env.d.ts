@@ -5,7 +5,3 @@ declare namespace astroHTML.JSX {
     value?: string;
   }
 }
-
-declare let AtmbThemeProvider: {
-  updatePickers: (theme?: string) => void;
-};

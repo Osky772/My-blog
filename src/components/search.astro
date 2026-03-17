@@ -12,7 +12,7 @@ if (trailingSlash === 'never') dataAttributes['data-strip-trailing-slash'] = ''
 
 <site-search class="contents" {...dataAttributes}>
 	<button
-		class="flex items-center sm:border sm:border-border sm:rounded-sm gap-2 sm:py-1 sm:px-3 sm:bg-white sm:dark:bg-black hover:cursor-pointer hover:border-gray-400 dark:hover:border-gray-500"
+		class="flex items-center sm:border sm:border-border sm:rounded-sm gap-2 sm:py-1 sm:px-3 sm:bg-white hover:cursor-pointer hover:border-gray-400"
 		data-open-modal
 		disabled
 		aria-label="Szukaj"
@@ -21,7 +21,7 @@ if (trailingSlash === 'never') dataAttributes['data-strip-trailing-slash'] = ''
 		<Icon name="search" class="w-5 h-5 sm:w-4 sm:h-4" />
 		<span class="hidden sm:block text-faded" aria-hidden="true">Szukaj</span>
 		<kbd
-			class="hidden sm:flex bg-gray-100 dark:bg-gray-800 px-2 rounded-sm gap-1 ml-0 sm:ml-8 md:ml-12"
+			class="hidden sm:flex bg-gray-100 px-2 rounded-sm gap-1 ml-0 sm:ml-8 md:ml-12"
 			style="display: none;"
 		>
 			<kbd class="text-sm">Ctrl</kbd><kbd class="text-sm">K</kbd>
@@ -29,7 +29,7 @@ if (trailingSlash === 'never') dataAttributes['data-strip-trailing-slash'] = ''
 	</button>
 
 	<dialog
-		class="p-0 m-0 w-full h-full max-w-full max-h-full shadow-xl open:flex flex-col backdrop:backdrop-blur-lg backdrop:bg-gray-900/20 border border-gray-300 dark:border-gray-600 sm:w-[90%] sm:max-w-3xl sm:h-max sm:min-h-64 sm:max-h-[calc(100%-8rem)] sm:rounded-lg sm:mt-12 sm:mx-auto bg-gray-100 dark:bg-gray-800"
+		class="p-0 m-0 w-full h-full max-w-full max-h-full shadow-xl open:flex flex-col backdrop:backdrop-blur-lg backdrop:bg-gray-900/20 border border-gray-300 sm:w-[90%] sm:max-w-3xl sm:h-max sm:min-h-64 sm:max-h-[calc(100%-8rem)] sm:rounded-lg sm:mt-12 sm:mx-auto bg-gray-100"
 		aria-label="Szukaj"
 	>
 		<div id="dialog-frame" class="relative overflow-auto flex flex-col gap-2 p-4 grow">
@@ -43,8 +43,8 @@ if (trailingSlash === 'never') dataAttributes['data-strip-trailing-slash'] = ''
 				<div id="search"></div>
 			</div>
 		</div>
-		<div class="hidden sm:block px-4 py-2 bg-gray-50 dark:bg-gray-900 text-faded">
-			<kbd class="text-sm bg-gray-100 dark:bg-gray-800 px-2 py-1 rounded-sm mr-1">Esc</kbd> aby zamknąć
+		<div class="hidden sm:block px-4 py-2 bg-gray-50 text-faded">
+			<kbd class="text-sm bg-gray-100 px-2 py-1 rounded-sm mr-1">Esc</kbd> aby zamknąć
 		</div>
 	</dialog>
 </site-search>

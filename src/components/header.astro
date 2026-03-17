@@ -3,7 +3,6 @@ import { HEADER, SITE } from '@constants'
 import Spacer from './spacer.astro'
 import Link from './link.astro'
 import Search from './search.astro'
-import ThemeToggle from './theme-toggle.astro'
 
 const { pathname } = Astro.url
 ---
@@ -20,7 +19,6 @@ const { pathname } = Astro.url
 		</div>
 		<div class="flex items-center gap-3">
 			<Search />
-			<ThemeToggle />
 		</div>
 	</div>
 	<Spacer axis="vertical" size={6} />

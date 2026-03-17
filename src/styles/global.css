@@ -16,23 +16,6 @@
 	--color-ic-border: var(--color-gray-200);
 }
 
-@layer theme {
-	:root {
-		@variant dark {
-			--color-bg: var(--color-gray-900);
-			--color-text: var(--color-gray-200);
-			--color-highlight: var(--color-white);
-			--color-primary: var(--color-blue-400);
-			--color-subtle: var(--color-gray-300);
-			--color-faded: var(--color-gray-400);
-			--color-border: var(--color-gray-700);
-
-			--color-ic-bg: var(--color-gray-700);
-			--color-ic-border: var(--color-gray-600);
-		}
-	}
-}
-
 @utility container {
 	margin-inline: auto;
 	padding-inline: 1rem;
@@ -61,8 +44,6 @@
 		@slot;
 	}
 }
-
-@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
 
 /* Custom styles */
 
@@ -128,7 +109,7 @@ a.active {
 	width: calc(var(--spacing) * 5);
 }
 
-/* Theme select styling */
+/* Select styling */
 select {
 	background-color: var(--color-bg);
 	color: var(--color-text);
