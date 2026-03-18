@@ -7,6 +7,8 @@ lastUpdated: 2026-03-02
 tags:
   - Przywództwo
 ---
+Piszę ten tekst, bo w edrone właśnie przechodzimy zmianę w sposobie myślenia o roli inżyniera. Coraz wyraźniej stawiamy na model, który nazywa się Product Builder. To nie jest nasz autorski wymysł, tylko szerszy kierunek, który coraz mocniej widać w branży. U nas to dopiero początek, ale ten sposób pracy już realnie funkcjonuje.
+
 Przez lata model pracy w zespołach produktowych wyglądał mniej więcej tak: Product Manager decyduje *co* budujemy, Designer projektuje *jak* to wygląda, a inżynier *implementuje*. Każdy w swoim silosie, każdy w swoim ogródku. Brzmi porządnie. Problem w tym, że ten model coraz gorzej działa.
 
 ## Tradycyjny model
@@ -70,6 +72,16 @@ To jest rozszerzenie ownership, nie robienie wszystkiego samemu.
 Naturalną konsekwencją tego modelu są małe, 2-osobowe zespoły (pary inżynierskie) z jasno zdefiniowanym scope'em. Każda para jest odpowiedzialna za konkretny kawałek produktu — end-to-end.
 
 To nie jest nowość w świecie software'u. Amazon ma two-pizza teams, Spotify miał squady. Ale różnica polega na tym, że tutaj para inżynierów nie jest „zespołem implementacyjnym” — jest zespołem produktowym. Z pełną odpowiedzialnością za outcome.
+
+## To nie jest tylko teoria
+
+Piszę o tym również dlatego, że my w edrone już świadomie idziemy w tę stronę. I nie jesteśmy w tym sami. Coraz więcej firm dochodzi do podobnych wniosków. LinkedIn opisał ten kierunek publicznie jako model *Full Stack Builder* i wdraża go u siebie na dużą skalę.
+
+> Jeśli chcesz zobaczyć, jak ten kierunek wygląda w bardzo dużej organizacji, zajrzyj do tekstu Tomera Cohena z LinkedIna: [Bringing the Full Stack Builder to Life](https://www.linkedin.com/pulse/bringing-full-stack-builder-life-tomer-cohen-gy5nf).
+
+U nas wygląda to tak: postawiliśmy takie oczekiwania wobec inżynierów, że sama implementacja nie wystarcza. Oczekujemy rozumienia problemu, większej samodzielności i realnego ownershipu nad tym, co trafia do produktu.
+
+I to jest ważne: nie chodzi o wrzucenie ludzi na głęboką wodę z hasłem „radźcie sobie”. Równolegle pomagamy inżynierom odnaleźć się w tej roli i uczymy się, jak najlepiej ich w tym wspierać. To dopiero początek tej zmiany, ale u nas ten model już funkcjonuje i widzę, że to jest właściwy kierunek.
 
 ## Kiedy ten model NIE działa?
 
